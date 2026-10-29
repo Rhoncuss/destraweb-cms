@@ -1,0 +1,18 @@
+{
+    "name": "Velocity",
+    "version": "1.0.0",
+    "description": "A dark, high-energy theme with neon gradients, glowing cards and oversized type. Built for product launches and tech publications.",
+    "author": "DESTRA",
+    "screenshot": "screenshot.svg",
+    "license": "Commercial",
+    "supports": {
+        "dark_mode": true,
+        "rtl": true,
+        "layout": "fallback"
+    },
+    "colors": {
+        "primary": "#22d3ee",
+        "secondary": "#a855f7",
+        "accent": "#f472b6"
+    }
+}

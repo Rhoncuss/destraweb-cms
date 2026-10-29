@@ -1,0 +1,51 @@
+DESTRA CMS — Commercial License
+Copyright © 2026 DESTRA. All rights reserved.
+
+This software is sold exclusively through CodeCanyon (Envato Market). Your
+rights to use, modify and distribute this software are defined by the Envato
+Market license you purchased with the item:
+
+  • Regular License — use in a single End Product which end users are not
+    charged for, directly or indirectly.
+  • Extended License — use in a single End Product which end users may be
+    charged for.
+
+The full, binding terms are the Envato Market Terms and the license text shown
+on the item's CodeCanyon page at the time of purchase. Where this summary and
+the Envato license differ, the Envato license prevails.
+
+You may NOT:
+  • redistribute, resell, sublicense, rent, lease or share the source code as a
+    standalone product or as part of a competing CMS, template bundle or
+    "developer" package;
+  • publish the source code in a public repository or otherwise make it
+    available to persons who have not purchased a license;
+  • remove or alter copyright notices in the original source files.
+
+You MAY:
+  • use the software for one End Product per license, as defined by Envato;
+  • modify the source code for that End Product;
+  • use the software for a client project, provided the client holds the
+    appropriate license.
+
+THIRD-PARTY COMPONENTS
+This package includes open-source libraries (CodeIgniter 4, Bootstrap,
+AdminLTE, Tailwind CSS, Font Awesome, TinyMCE, CKEditor 5, Summernote,
+Dropzone, FullCalendar, Chart.js, Swiper, SweetAlert2, SortableJS,
+HTMLPurifier and others). Each component remains under its own license, as
+stated in its distribution files under `vendor/` and `public/vendor/`.
+Nothing in this license restricts rights granted by those licenses.
+
+NO WARRANTY
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+SUPPORT
+Support is provided through the item's CodeCanyon support tab for the support
+period included with your purchase. Custom development, hosting, migrations
+and third-party integrations are outside the scope of item support.

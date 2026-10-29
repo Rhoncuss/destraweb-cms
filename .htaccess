@@ -1,0 +1,40 @@
+# ---------------------------------------------------------------------------
+# DESTRA CMS — document-root fallback for shared hosting (cPanel, XAMPP)
+#
+# Use this file when your hosting points the domain at the project root instead
+# of the recommended `public/` directory. It blocks direct access to application
+# code and sensitive files, then routes every request into public/.
+#
+# If you can set the document root to `public/`, do that instead and delete or
+# leave this file unused — it is ignored when public/ is the root.
+# ---------------------------------------------------------------------------
+
+Options -Indexes
+
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # 1. Never serve application code, dependencies or runtime data.
+    RewriteRule ^(app|vendor|writable|resources|tests|sdk|scripts|themes|plugins|node_modules|vibe_images)(/|$) - [F,L]
+
+    # 2. Never serve dotfiles, environment files, build tooling or manifests.
+    RewriteRule ^(\.env.*|\.git|\.idea|\.vscode|composer\.(json|lock)|package(-lock)?\.json|phpunit.*\.xml|spark|preload\.php|builds)$ - [F,L]
+
+    # 3. Requests already inside public/ are handled normally.
+    RewriteCond %{REQUEST_URI} ^/.*?/public/ [NC]
+    RewriteRule ^ - [L]
+
+    # 4. Route everything else through the front controller in public/.
+    RewriteRule ^(.*)$ public/$1 [L]
+</IfModule>
+
+# If mod_rewrite is unavailable, refuse to expose the directory listing.
+<IfModule !mod_rewrite.c>
+    ErrorDocument 403 "DESTRA CMS requires mod_rewrite. Point the document root at /public instead."
+</IfModule>
+
+ServerSignature Off
+
+<IfModule mod_headers.c>
+    Header always set X-Content-Type-Options "nosniff"
+</IfModule>

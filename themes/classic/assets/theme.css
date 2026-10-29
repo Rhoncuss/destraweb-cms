@@ -1,0 +1,232 @@
+/* ==========================================================================
+   DESTRA theme: Classic
+   Newspaper DNA: serif headlines, hairline rules, generous whitespace and a
+   paper-warm canvas. Colour accents still come from Appearance settings.
+   ========================================================================== */
+
+:root {
+    --dst-radius: 4px;
+    --dst-radius-sm: 3px;
+    --dst-radius-lg: 8px;
+
+    --dst-ink: #17181c;
+    --dst-text: #33343a;
+    --dst-muted: #6f6a62;
+    --dst-line: #ddd6ca;
+    --dst-surface: #fffdf8;
+    --dst-soft: #f6f1e7;
+    --dst-bg: #f4efe4;
+    --dst-serif: Georgia, 'Iowan Old Style', 'Times New Roman', serif;
+
+    --dst-shadow: 0 10px 26px -22px rgba(23, 24, 28, .45);
+    --dst-shadow-lg: 0 26px 60px -44px rgba(23, 24, 28, .55);
+}
+
+body.dst-body {
+    background-image:
+        linear-gradient(180deg, rgba(23, 24, 28, .035), transparent 320px),
+        radial-gradient(50rem 24rem at 100% 0%, rgba(184, 134, 11, .06), transparent 60%);
+}
+
+.dst-display,
+.dst-section-title,
+.dst-card__title,
+.dst-article-head h1,
+.dst-drawer__title,
+.dst-popup__title,
+.dst-footer h3,
+.dst-cta h2 {
+    font-family: var(--dst-serif);
+    font-weight: 700;
+    letter-spacing: -.015em;
+}
+
+.dst-display {
+    line-height: 1.1;
+}
+
+.dst-lede {
+    font-family: var(--dst-serif);
+    font-size: 1.15rem;
+    line-height: 1.75;
+}
+
+.dst-kicker {
+    letter-spacing: .2em;
+}
+
+/* Header & navigation */
+.dst-header {
+    background: var(--dst-surface);
+    border-bottom: 1px double var(--dst-line);
+    box-shadow: none;
+}
+
+.dst-header.is-stuck {
+    box-shadow: 0 12px 28px -26px rgba(23, 24, 28, .5);
+}
+
+.dst-menu > li > a {
+    font-family: var(--dst-serif);
+    font-size: .95rem;
+    letter-spacing: .04em;
+}
+
+.dst-brand__mark {
+    border-radius: 2px;
+    background: var(--dst-ink);
+    color: var(--dst-surface);
+    font-family: var(--dst-serif);
+}
+
+.dst-brand__text strong {
+    font-family: var(--dst-serif);
+    letter-spacing: .02em;
+}
+
+.dst-brand__text small {
+    font-style: italic;
+    letter-spacing: .02em;
+}
+
+/* Buttons read like print call-outs */
+.dst-btn {
+    border-radius: 2px;
+    font-weight: 650;
+    letter-spacing: .04em;
+    box-shadow: none;
+}
+
+.dst-btn--primary {
+    background: var(--dst-ink);
+    border-color: var(--dst-ink);
+}
+
+.dst-btn--primary:hover {
+    background: color-mix(in srgb, var(--dst-ink) 88%, black);
+    box-shadow: 0 12px 24px -20px rgba(23, 24, 28, .8);
+}
+
+.dst-btn--ghost {
+    background: transparent;
+    border-color: var(--dst-ink);
+    color: var(--dst-ink);
+}
+
+/* Cards lose softness, gain rules */
+.dst-card {
+    background: var(--dst-surface);
+    border-radius: 3px;
+    box-shadow: none;
+}
+
+.dst-card:hover {
+    transform: none;
+    box-shadow: var(--dst-shadow);
+    border-color: var(--dst-ink);
+}
+
+.dst-card__media {
+    border-bottom: 1px solid var(--dst-line);
+}
+
+.dst-card__media img,
+.dst-card:hover .dst-card__media img {
+    transform: none;
+}
+
+.dst-chip {
+    border-radius: 2px;
+}
+
+.dst-chip--overlay {
+    background: var(--dst-surface);
+    color: var(--dst-ink);
+}
+
+/* Hero: newspaper nameplate treatment */
+.dst-home-hero {
+    gap: 34px;
+    border-top: 3px double var(--dst-ink);
+    border-bottom: 1px solid var(--dst-line);
+    padding-top: 34px;
+    padding-bottom: 34px;
+}
+
+.dst-home-hero__intro .dst-display {
+    font-size: clamp(2.1rem, 1.3rem + 2.8vw, 3.4rem);
+}
+
+.dst-home-hero__feature .dst-card--hero {
+    min-height: 400px;
+    border: 1px solid var(--dst-ink);
+}
+
+.dst-home-hero__feature .dst-card--hero .dst-card__body {
+    background: linear-gradient(180deg, transparent, rgba(10, 10, 12, .88));
+}
+
+.dst-band--split,
+.dst-cta {
+    border-radius: 4px;
+}
+
+.dst-cta {
+    background:
+        repeating-linear-gradient(135deg, rgba(255, 255, 255, .05) 0 12px, transparent 12px 24px),
+        var(--dst-ink);
+}
+
+/* Article typography */
+.dst-prose {
+    font-family: var(--dst-serif);
+    font-size: 1.075rem;
+    line-height: 1.85;
+}
+
+.dst-prose h2,
+.dst-prose h3 {
+    font-family: var(--dst-serif);
+}
+
+.dst-prose > p:first-of-type::first-letter {
+    float: left;
+    font-size: 3.3em;
+    line-height: .82;
+    padding: .06em .1em 0 0;
+    font-weight: 700;
+    color: var(--dst-primary);
+}
+
+.dst-article-head {
+    border-bottom: 1px solid var(--dst-line);
+    padding-bottom: 26px;
+}
+
+.dst-article-cover img {
+    border-radius: 2px;
+}
+
+/* Footer becomes a masthead */
+.dst-footer {
+    background: var(--dst-ink);
+    border-top: 4px solid var(--dst-accent);
+}
+
+.dst-footer__grid {
+    gap: 34px;
+}
+
+.dst-footer h3 {
+    font-size: 1.05rem;
+}
+
+.dst-mobilebar {
+    border-top: 1px solid var(--dst-line);
+    background: var(--dst-surface);
+}
+
+[dir="rtl"] .dst-prose > p:first-of-type::first-letter {
+    float: right;
+    padding: .06em 0 0 .1em;
+}

@@ -1,0 +1,940 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-base="http://localhost:8080/" data-bs-theme="light" data-scheme="midnight">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>My profile · DESTRA Studio</title>
+    <meta name="destra_csrf" content="ed0fa763b54cad30c76e64d0ff18559f">
+    <link rel="icon" href="http://localhost:8080/favicon.ico">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/adminlte/css/adminlte.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/assets/admin/admin.css?v=1793237511">
+    </head>
+<body class="layout-fixed sidebar-expand-lg app-body">
+    <div class="app-wrapper">
+        <nav class="app-header navbar navbar-expand bg-body">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link dst-icon-btn" data-lte-toggle="sidebar" href="#" role="button" aria-label="Toggle sidebar">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-flex align-items-center ms-2">
+                        <form class="dst-search" action="http://localhost:8080/admin/search" method="get" role="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" name="q" value="" placeholder="Search content, media, users…" aria-label="Search">
+                            <kbd>⌘K</kbd>
+                        </form>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto align-items-center gap-1">
+                    <li class="nav-item dropdown d-none d-sm-block">
+                        <a class="nav-link dst-icon-btn" href="http://localhost:8080/" target="_blank" rel="noopener" title="View website">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dst-icon-btn" href="http://localhost:8080/admin/notifications" title="Notifications">
+                            <i class="fa-regular fa-bell"></i>
+                                                    </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dst-icon-btn" type="button" data-dst-theme-toggle title="Toggle dark mode">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="dst-user-btn dropdown-toggle" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                            <span class="dst-avatar">D</span>
+                            <span class="d-none d-lg-block">
+                                <span class="dst-user-name d-block">Destra Owner</span>
+                                <span class="dst-user-role">Super Admin</span>
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="border-radius:14px;min-width:230px;">
+                            <li class="px-3 py-2">
+                                <div class="fw-semibold">Destra Owner</div>
+                                <div class="text-muted-2 small">owner@destra.test</div>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="http://localhost:8080/admin/profile"><i class="fa-regular fa-user me-2"></i>My profile</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8080/admin/settings"><i class="fa-solid fa-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8080/" target="_blank"><i class="fa-solid fa-globe me-2"></i>View website</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <form method="post" action="http://localhost:8080/logout">
+                                    <input type="hidden" name="destra_csrf" value="ed0fa763b54cad30c76e64d0ff18559f">                                    <button class="dropdown-item text-danger" type="submit"><i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Sign out</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <aside class="app-sidebar shadow" data-bs-theme="dark">
+    <div class="sidebar-brand">
+        <span class="dst-brand-mark">D</span>
+        <span>
+            <span class="dst-brand-name">DESTRA</span>
+            <span class="dst-brand-sub d-block">Content platform</span>
+        </span>
+    </div>
+
+    <div class="sidebar-wrapper">
+        <nav class="mt-1" role="navigation">
+            <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Overview</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin" class="nav-link"><i class="fa-solid&#x20;fa-gauge-high nav-icon"></i><p>Dashboard</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;reports" class="nav-link"><i class="fa-solid&#x20;fa-chart-line nav-icon"></i><p>Reports</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;calendar" class="nav-link"><i class="fa-regular&#x20;fa-calendar-days nav-icon"></i><p>Calendar</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Content</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;content" class="nav-link"><i class="fa-regular&#x20;fa-file-lines nav-icon"></i><p>All content</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;content&#x3F;type&#x3D;post" class="nav-link"><i class="fa-regular&#x20;fa-newspaper nav-icon"></i><p>Posts</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;content&#x3F;type&#x3D;page" class="nav-link"><i class="fa-regular&#x20;fa-file nav-icon"></i><p>Pages</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;content&#x3F;type&#x3D;doc" class="nav-link"><i class="fa-solid&#x20;fa-book-open nav-icon"></i><p>Documentation</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;sections" class="nav-link"><i class="fa-solid&#x20;fa-layer-group nav-icon"></i><p>Sections</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;categories" class="nav-link"><i class="fa-solid&#x20;fa-folder-tree nav-icon"></i><p>Categories</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;tags" class="nav-link"><i class="fa-solid&#x20;fa-tags nav-icon"></i><p>Tags</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;comments" class="nav-link"><i class="fa-regular&#x20;fa-comments nav-icon"></i><p>Comments</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;media" class="nav-link"><i class="fa-regular&#x20;fa-images nav-icon"></i><p>Media library</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Engagement</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;forms" class="nav-link"><i class="fa-brands&#x20;fa-wpforms nav-icon"></i><p>Forms</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;inbox" class="nav-link"><i class="fa-regular&#x20;fa-envelope-open nav-icon"></i><p>Inbox</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;orders" class="nav-link"><i class="fa-solid&#x20;fa-bag-shopping nav-icon"></i><p>Orders</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;newsletter" class="nav-link"><i class="fa-regular&#x20;fa-paper-plane nav-icon"></i><p>Newsletter</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;banners" class="nav-link"><i class="fa-regular&#x20;fa-rectangle-ad nav-icon"></i><p>Banners &amp; popups</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Structure</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;menus" class="nav-link"><i class="fa-solid&#x20;fa-bars nav-icon"></i><p>Menus</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;languages" class="nav-link"><i class="fa-solid&#x20;fa-language nav-icon"></i><p>Languages</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;redirects" class="nav-link"><i class="fa-solid&#x20;fa-signs-post nav-icon"></i><p>Redirects</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;seo" class="nav-link"><i class="fa-solid&#x20;fa-magnifying-glass-chart nav-icon"></i><p>SEO suite</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">People</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;users" class="nav-link"><i class="fa-solid&#x20;fa-users nav-icon"></i><p>Users</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;roles" class="nav-link"><i class="fa-solid&#x20;fa-user-shield nav-icon"></i><p>Roles &amp; permissions</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Appearance</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;themes" class="nav-link"><i class="fa-solid&#x20;fa-palette nav-icon"></i><p>Themes</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;plugins" class="nav-link"><i class="fa-solid&#x20;fa-plug nav-icon"></i><p>Plugins</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;settings" class="nav-link"><i class="fa-solid&#x20;fa-sliders nav-icon"></i><p>Settings</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">System</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;tools" class="nav-link"><i class="fa-solid&#x20;fa-screwdriver-wrench nav-icon"></i><p>Tools &amp; cache</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;api-tokens" class="nav-link"><i class="fa-solid&#x20;fa-code nav-icon"></i><p>API tokens</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;notifications" class="nav-link"><i class="fa-regular&#x20;fa-bell nav-icon"></i><p>Notifications</p></a></li>            </ul>
+        </nav>
+    </div>
+
+    <div class="dst-sidebar-foot">
+        <strong>DESTRA Studio</strong><br>
+        v1.0.0 · Aurora    </div>
+</aside>
+
+        <main class="app-main">
+            <div class="app-content-header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1>My profile</h1>
+                                                            <div class="subtitle">Your account details, password and workspace appearance.</div>
+                                                                                        <ol class="breadcrumb mt-2">
+                                    <li class="breadcrumb-item"><a href="http://localhost:8080/admin">Dashboard</a></li>
+                                                                                                                        <li class="breadcrumb-item active" aria-current="page">My profile</li>
+                                                                                                            </ol>
+                                                    </div>
+                        <div class="col-md-5 text-md-end page-actions">
+                                <a class="btn btn-soft" href="http://localhost:8080/admin/notifications"><i class="fa-regular fa-bell me-2"></i>Notifications</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-content">
+                <div class="container-fluid">
+                    <div class="dst-flash"
+                         data-success=""
+                         data-error=""></div>
+                    <div class="row g-3">
+    <div class="col-xl-8">
+        <div class="dst-card">
+            <div class="profile-hero">
+                <div class="profile-avatar-lg">
+                                            <span>DO</span>
+                                    </div>
+                <div class="min-w-0">
+                    <h2 class="h4 mb-1 truncate">Destra Owner</h2>
+                    <div class="d-flex flex-wrap gap-2 align-items-center">
+                        <span class="dst-badge active">Super Admin</span>
+                        <span class="dst-chip"><i class="fa-solid fa-at me-1"></i>owner</span>
+                        <span class="dst-chip"><i class="fa-regular fa-calendar me-1"></i>Joined October 2026</span>
+                    </div>
+                </div>
+            </div>
+
+            <form method="post" action="http://localhost:8080/admin/profile" class="card-body pt-0">
+                <input type="hidden" name="destra_csrf" value="ed0fa763b54cad30c76e64d0ff18559f">                <div class="row g-3">
+                    <div class="col-md-6">
+                        <label class="form-label" for="profileName">Full name</label>
+                        <input type="text" class="form-control" id="profileName" name="name" maxlength="120" required value="Destra&#x20;Owner">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="profileUsername">Username</label>
+                        <input type="text" class="form-control" id="profileUsername" name="username" maxlength="60" required value="owner">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="profileEmail">Email address</label>
+                        <input type="email" class="form-control" id="profileEmail" name="email" maxlength="190" required value="owner&#x40;destra.test">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="profileCurrentPassword">Current password</label>
+                        <input type="password" class="form-control" id="profileCurrentPassword" name="current_password" autocomplete="current-password" placeholder="Only needed to change email">
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="profileLocale">Interface language</label>
+                        <select class="form-select" id="profileLocale" name="locale">
+                                                            <option value="en" selected>
+                                    English — English                                </option>
+                                                            <option value="id" >
+                                    Indonesian — Bahasa Indonesia                                </option>
+                                                            <option value="ar" >
+                                    Arabic — العربية                                </option>
+                                                    </select>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label" for="profileTimezone">Timezone</label>
+                        <select class="form-select" id="profileTimezone" name="timezone">
+                            <option value="">Use site default</option>
+                                                            <option value="Africa&#x2F;Abidjan" >Africa/Abidjan</option>
+                                                            <option value="Africa&#x2F;Accra" >Africa/Accra</option>
+                                                            <option value="Africa&#x2F;Addis_Ababa" >Africa/Addis_Ababa</option>
+                                                            <option value="Africa&#x2F;Algiers" >Africa/Algiers</option>
+                                                            <option value="Africa&#x2F;Asmara" >Africa/Asmara</option>
+                                                            <option value="Africa&#x2F;Bamako" >Africa/Bamako</option>
+                                                            <option value="Africa&#x2F;Bangui" >Africa/Bangui</option>
+                                                            <option value="Africa&#x2F;Banjul" >Africa/Banjul</option>
+                                                            <option value="Africa&#x2F;Bissau" >Africa/Bissau</option>
+                                                            <option value="Africa&#x2F;Blantyre" >Africa/Blantyre</option>
+                                                            <option value="Africa&#x2F;Brazzaville" >Africa/Brazzaville</option>
+                                                            <option value="Africa&#x2F;Bujumbura" >Africa/Bujumbura</option>
+                                                            <option value="Africa&#x2F;Cairo" >Africa/Cairo</option>
+                                                            <option value="Africa&#x2F;Casablanca" >Africa/Casablanca</option>
+                                                            <option value="Africa&#x2F;Ceuta" >Africa/Ceuta</option>
+                                                            <option value="Africa&#x2F;Conakry" >Africa/Conakry</option>
+                                                            <option value="Africa&#x2F;Dakar" >Africa/Dakar</option>
+                                                            <option value="Africa&#x2F;Dar_es_Salaam" >Africa/Dar_es_Salaam</option>
+                                                            <option value="Africa&#x2F;Djibouti" >Africa/Djibouti</option>
+                                                            <option value="Africa&#x2F;Douala" >Africa/Douala</option>
+                                                            <option value="Africa&#x2F;El_Aaiun" >Africa/El_Aaiun</option>
+                                                            <option value="Africa&#x2F;Freetown" >Africa/Freetown</option>
+                                                            <option value="Africa&#x2F;Gaborone" >Africa/Gaborone</option>
+                                                            <option value="Africa&#x2F;Harare" >Africa/Harare</option>
+                                                            <option value="Africa&#x2F;Johannesburg" >Africa/Johannesburg</option>
+                                                            <option value="Africa&#x2F;Juba" >Africa/Juba</option>
+                                                            <option value="Africa&#x2F;Kampala" >Africa/Kampala</option>
+                                                            <option value="Africa&#x2F;Khartoum" >Africa/Khartoum</option>
+                                                            <option value="Africa&#x2F;Kigali" >Africa/Kigali</option>
+                                                            <option value="Africa&#x2F;Kinshasa" >Africa/Kinshasa</option>
+                                                            <option value="Africa&#x2F;Lagos" >Africa/Lagos</option>
+                                                            <option value="Africa&#x2F;Libreville" >Africa/Libreville</option>
+                                                            <option value="Africa&#x2F;Lome" >Africa/Lome</option>
+                                                            <option value="Africa&#x2F;Luanda" >Africa/Luanda</option>
+                                                            <option value="Africa&#x2F;Lubumbashi" >Africa/Lubumbashi</option>
+                                                            <option value="Africa&#x2F;Lusaka" >Africa/Lusaka</option>
+                                                            <option value="Africa&#x2F;Malabo" >Africa/Malabo</option>
+                                                            <option value="Africa&#x2F;Maputo" >Africa/Maputo</option>
+                                                            <option value="Africa&#x2F;Maseru" >Africa/Maseru</option>
+                                                            <option value="Africa&#x2F;Mbabane" >Africa/Mbabane</option>
+                                                            <option value="Africa&#x2F;Mogadishu" >Africa/Mogadishu</option>
+                                                            <option value="Africa&#x2F;Monrovia" >Africa/Monrovia</option>
+                                                            <option value="Africa&#x2F;Nairobi" >Africa/Nairobi</option>
+                                                            <option value="Africa&#x2F;Ndjamena" >Africa/Ndjamena</option>
+                                                            <option value="Africa&#x2F;Niamey" >Africa/Niamey</option>
+                                                            <option value="Africa&#x2F;Nouakchott" >Africa/Nouakchott</option>
+                                                            <option value="Africa&#x2F;Ouagadougou" >Africa/Ouagadougou</option>
+                                                            <option value="Africa&#x2F;Porto-Novo" >Africa/Porto-Novo</option>
+                                                            <option value="Africa&#x2F;Sao_Tome" >Africa/Sao_Tome</option>
+                                                            <option value="Africa&#x2F;Tripoli" >Africa/Tripoli</option>
+                                                            <option value="Africa&#x2F;Tunis" >Africa/Tunis</option>
+                                                            <option value="Africa&#x2F;Windhoek" >Africa/Windhoek</option>
+                                                            <option value="America&#x2F;Adak" >America/Adak</option>
+                                                            <option value="America&#x2F;Anchorage" >America/Anchorage</option>
+                                                            <option value="America&#x2F;Anguilla" >America/Anguilla</option>
+                                                            <option value="America&#x2F;Antigua" >America/Antigua</option>
+                                                            <option value="America&#x2F;Araguaina" >America/Araguaina</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;Buenos_Aires" >America/Argentina/Buenos_Aires</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;Catamarca" >America/Argentina/Catamarca</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;Cordoba" >America/Argentina/Cordoba</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;Jujuy" >America/Argentina/Jujuy</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;La_Rioja" >America/Argentina/La_Rioja</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;Mendoza" >America/Argentina/Mendoza</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;Rio_Gallegos" >America/Argentina/Rio_Gallegos</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;Salta" >America/Argentina/Salta</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;San_Juan" >America/Argentina/San_Juan</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;San_Luis" >America/Argentina/San_Luis</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;Tucuman" >America/Argentina/Tucuman</option>
+                                                            <option value="America&#x2F;Argentina&#x2F;Ushuaia" >America/Argentina/Ushuaia</option>
+                                                            <option value="America&#x2F;Aruba" >America/Aruba</option>
+                                                            <option value="America&#x2F;Asuncion" >America/Asuncion</option>
+                                                            <option value="America&#x2F;Atikokan" >America/Atikokan</option>
+                                                            <option value="America&#x2F;Bahia" >America/Bahia</option>
+                                                            <option value="America&#x2F;Bahia_Banderas" >America/Bahia_Banderas</option>
+                                                            <option value="America&#x2F;Barbados" >America/Barbados</option>
+                                                            <option value="America&#x2F;Belem" >America/Belem</option>
+                                                            <option value="America&#x2F;Belize" >America/Belize</option>
+                                                            <option value="America&#x2F;Blanc-Sablon" >America/Blanc-Sablon</option>
+                                                            <option value="America&#x2F;Boa_Vista" >America/Boa_Vista</option>
+                                                            <option value="America&#x2F;Bogota" >America/Bogota</option>
+                                                            <option value="America&#x2F;Boise" >America/Boise</option>
+                                                            <option value="America&#x2F;Cambridge_Bay" >America/Cambridge_Bay</option>
+                                                            <option value="America&#x2F;Campo_Grande" >America/Campo_Grande</option>
+                                                            <option value="America&#x2F;Cancun" >America/Cancun</option>
+                                                            <option value="America&#x2F;Caracas" >America/Caracas</option>
+                                                            <option value="America&#x2F;Cayenne" >America/Cayenne</option>
+                                                            <option value="America&#x2F;Cayman" >America/Cayman</option>
+                                                            <option value="America&#x2F;Chicago" >America/Chicago</option>
+                                                            <option value="America&#x2F;Chihuahua" >America/Chihuahua</option>
+                                                            <option value="America&#x2F;Ciudad_Juarez" >America/Ciudad_Juarez</option>
+                                                            <option value="America&#x2F;Costa_Rica" >America/Costa_Rica</option>
+                                                            <option value="America&#x2F;Creston" >America/Creston</option>
+                                                            <option value="America&#x2F;Cuiaba" >America/Cuiaba</option>
+                                                            <option value="America&#x2F;Curacao" >America/Curacao</option>
+                                                            <option value="America&#x2F;Danmarkshavn" >America/Danmarkshavn</option>
+                                                            <option value="America&#x2F;Dawson" >America/Dawson</option>
+                                                            <option value="America&#x2F;Dawson_Creek" >America/Dawson_Creek</option>
+                                                            <option value="America&#x2F;Denver" >America/Denver</option>
+                                                            <option value="America&#x2F;Detroit" >America/Detroit</option>
+                                                            <option value="America&#x2F;Dominica" >America/Dominica</option>
+                                                            <option value="America&#x2F;Edmonton" >America/Edmonton</option>
+                                                            <option value="America&#x2F;Eirunepe" >America/Eirunepe</option>
+                                                            <option value="America&#x2F;El_Salvador" >America/El_Salvador</option>
+                                                            <option value="America&#x2F;Fort_Nelson" >America/Fort_Nelson</option>
+                                                            <option value="America&#x2F;Fortaleza" >America/Fortaleza</option>
+                                                            <option value="America&#x2F;Glace_Bay" >America/Glace_Bay</option>
+                                                            <option value="America&#x2F;Goose_Bay" >America/Goose_Bay</option>
+                                                            <option value="America&#x2F;Grand_Turk" >America/Grand_Turk</option>
+                                                            <option value="America&#x2F;Grenada" >America/Grenada</option>
+                                                            <option value="America&#x2F;Guadeloupe" >America/Guadeloupe</option>
+                                                            <option value="America&#x2F;Guatemala" >America/Guatemala</option>
+                                                            <option value="America&#x2F;Guayaquil" >America/Guayaquil</option>
+                                                            <option value="America&#x2F;Guyana" >America/Guyana</option>
+                                                            <option value="America&#x2F;Halifax" >America/Halifax</option>
+                                                            <option value="America&#x2F;Havana" >America/Havana</option>
+                                                            <option value="America&#x2F;Hermosillo" >America/Hermosillo</option>
+                                                            <option value="America&#x2F;Indiana&#x2F;Indianapolis" >America/Indiana/Indianapolis</option>
+                                                            <option value="America&#x2F;Indiana&#x2F;Knox" >America/Indiana/Knox</option>
+                                                            <option value="America&#x2F;Indiana&#x2F;Marengo" >America/Indiana/Marengo</option>
+                                                            <option value="America&#x2F;Indiana&#x2F;Petersburg" >America/Indiana/Petersburg</option>
+                                                            <option value="America&#x2F;Indiana&#x2F;Tell_City" >America/Indiana/Tell_City</option>
+                                                            <option value="America&#x2F;Indiana&#x2F;Vevay" >America/Indiana/Vevay</option>
+                                                            <option value="America&#x2F;Indiana&#x2F;Vincennes" >America/Indiana/Vincennes</option>
+                                                            <option value="America&#x2F;Indiana&#x2F;Winamac" >America/Indiana/Winamac</option>
+                                                            <option value="America&#x2F;Inuvik" >America/Inuvik</option>
+                                                            <option value="America&#x2F;Iqaluit" >America/Iqaluit</option>
+                                                            <option value="America&#x2F;Jamaica" >America/Jamaica</option>
+                                                            <option value="America&#x2F;Juneau" >America/Juneau</option>
+                                                            <option value="America&#x2F;Kentucky&#x2F;Louisville" >America/Kentucky/Louisville</option>
+                                                            <option value="America&#x2F;Kentucky&#x2F;Monticello" >America/Kentucky/Monticello</option>
+                                                            <option value="America&#x2F;Kralendijk" >America/Kralendijk</option>
+                                                            <option value="America&#x2F;La_Paz" >America/La_Paz</option>
+                                                            <option value="America&#x2F;Lima" >America/Lima</option>
+                                                            <option value="America&#x2F;Los_Angeles" >America/Los_Angeles</option>
+                                                            <option value="America&#x2F;Lower_Princes" >America/Lower_Princes</option>
+                                                            <option value="America&#x2F;Maceio" >America/Maceio</option>
+                                                            <option value="America&#x2F;Managua" >America/Managua</option>
+                                                            <option value="America&#x2F;Manaus" >America/Manaus</option>
+                                                            <option value="America&#x2F;Marigot" >America/Marigot</option>
+                                                            <option value="America&#x2F;Martinique" >America/Martinique</option>
+                                                            <option value="America&#x2F;Matamoros" >America/Matamoros</option>
+                                                            <option value="America&#x2F;Mazatlan" >America/Mazatlan</option>
+                                                            <option value="America&#x2F;Menominee" >America/Menominee</option>
+                                                            <option value="America&#x2F;Merida" >America/Merida</option>
+                                                            <option value="America&#x2F;Metlakatla" >America/Metlakatla</option>
+                                                            <option value="America&#x2F;Mexico_City" >America/Mexico_City</option>
+                                                            <option value="America&#x2F;Miquelon" >America/Miquelon</option>
+                                                            <option value="America&#x2F;Moncton" >America/Moncton</option>
+                                                            <option value="America&#x2F;Monterrey" >America/Monterrey</option>
+                                                            <option value="America&#x2F;Montevideo" >America/Montevideo</option>
+                                                            <option value="America&#x2F;Montserrat" >America/Montserrat</option>
+                                                            <option value="America&#x2F;Nassau" >America/Nassau</option>
+                                                            <option value="America&#x2F;New_York" >America/New_York</option>
+                                                            <option value="America&#x2F;Nome" >America/Nome</option>
+                                                            <option value="America&#x2F;Noronha" >America/Noronha</option>
+                                                            <option value="America&#x2F;North_Dakota&#x2F;Beulah" >America/North_Dakota/Beulah</option>
+                                                            <option value="America&#x2F;North_Dakota&#x2F;Center" >America/North_Dakota/Center</option>
+                                                            <option value="America&#x2F;North_Dakota&#x2F;New_Salem" >America/North_Dakota/New_Salem</option>
+                                                            <option value="America&#x2F;Nuuk" >America/Nuuk</option>
+                                                            <option value="America&#x2F;Ojinaga" >America/Ojinaga</option>
+                                                            <option value="America&#x2F;Panama" >America/Panama</option>
+                                                            <option value="America&#x2F;Paramaribo" >America/Paramaribo</option>
+                                                            <option value="America&#x2F;Phoenix" >America/Phoenix</option>
+                                                            <option value="America&#x2F;Port-au-Prince" >America/Port-au-Prince</option>
+                                                            <option value="America&#x2F;Port_of_Spain" >America/Port_of_Spain</option>
+                                                            <option value="America&#x2F;Porto_Velho" >America/Porto_Velho</option>
+                                                            <option value="America&#x2F;Puerto_Rico" >America/Puerto_Rico</option>
+                                                            <option value="America&#x2F;Punta_Arenas" >America/Punta_Arenas</option>
+                                                            <option value="America&#x2F;Rankin_Inlet" >America/Rankin_Inlet</option>
+                                                            <option value="America&#x2F;Recife" >America/Recife</option>
+                                                            <option value="America&#x2F;Regina" >America/Regina</option>
+                                                            <option value="America&#x2F;Resolute" >America/Resolute</option>
+                                                            <option value="America&#x2F;Rio_Branco" >America/Rio_Branco</option>
+                                                            <option value="America&#x2F;Santarem" >America/Santarem</option>
+                                                            <option value="America&#x2F;Santiago" >America/Santiago</option>
+                                                            <option value="America&#x2F;Santo_Domingo" >America/Santo_Domingo</option>
+                                                            <option value="America&#x2F;Sao_Paulo" >America/Sao_Paulo</option>
+                                                            <option value="America&#x2F;Scoresbysund" >America/Scoresbysund</option>
+                                                            <option value="America&#x2F;Sitka" >America/Sitka</option>
+                                                            <option value="America&#x2F;St_Barthelemy" >America/St_Barthelemy</option>
+                                                            <option value="America&#x2F;St_Johns" >America/St_Johns</option>
+                                                            <option value="America&#x2F;St_Kitts" >America/St_Kitts</option>
+                                                            <option value="America&#x2F;St_Lucia" >America/St_Lucia</option>
+                                                            <option value="America&#x2F;St_Thomas" >America/St_Thomas</option>
+                                                            <option value="America&#x2F;St_Vincent" >America/St_Vincent</option>
+                                                            <option value="America&#x2F;Swift_Current" >America/Swift_Current</option>
+                                                            <option value="America&#x2F;Tegucigalpa" >America/Tegucigalpa</option>
+                                                            <option value="America&#x2F;Thule" >America/Thule</option>
+                                                            <option value="America&#x2F;Tijuana" >America/Tijuana</option>
+                                                            <option value="America&#x2F;Toronto" >America/Toronto</option>
+                                                            <option value="America&#x2F;Tortola" >America/Tortola</option>
+                                                            <option value="America&#x2F;Vancouver" >America/Vancouver</option>
+                                                            <option value="America&#x2F;Whitehorse" >America/Whitehorse</option>
+                                                            <option value="America&#x2F;Winnipeg" >America/Winnipeg</option>
+                                                            <option value="America&#x2F;Yakutat" >America/Yakutat</option>
+                                                            <option value="Antarctica&#x2F;Casey" >Antarctica/Casey</option>
+                                                            <option value="Antarctica&#x2F;Davis" >Antarctica/Davis</option>
+                                                            <option value="Antarctica&#x2F;DumontDUrville" >Antarctica/DumontDUrville</option>
+                                                            <option value="Antarctica&#x2F;Macquarie" >Antarctica/Macquarie</option>
+                                                            <option value="Antarctica&#x2F;Mawson" >Antarctica/Mawson</option>
+                                                            <option value="Antarctica&#x2F;McMurdo" >Antarctica/McMurdo</option>
+                                                            <option value="Antarctica&#x2F;Palmer" >Antarctica/Palmer</option>
+                                                            <option value="Antarctica&#x2F;Rothera" >Antarctica/Rothera</option>
+                                                            <option value="Antarctica&#x2F;Syowa" >Antarctica/Syowa</option>
+                                                            <option value="Antarctica&#x2F;Troll" >Antarctica/Troll</option>
+                                                            <option value="Antarctica&#x2F;Vostok" >Antarctica/Vostok</option>
+                                                            <option value="Arctic&#x2F;Longyearbyen" >Arctic/Longyearbyen</option>
+                                                            <option value="Asia&#x2F;Aden" >Asia/Aden</option>
+                                                            <option value="Asia&#x2F;Almaty" >Asia/Almaty</option>
+                                                            <option value="Asia&#x2F;Amman" >Asia/Amman</option>
+                                                            <option value="Asia&#x2F;Anadyr" >Asia/Anadyr</option>
+                                                            <option value="Asia&#x2F;Aqtau" >Asia/Aqtau</option>
+                                                            <option value="Asia&#x2F;Aqtobe" >Asia/Aqtobe</option>
+                                                            <option value="Asia&#x2F;Ashgabat" >Asia/Ashgabat</option>
+                                                            <option value="Asia&#x2F;Atyrau" >Asia/Atyrau</option>
+                                                            <option value="Asia&#x2F;Baghdad" >Asia/Baghdad</option>
+                                                            <option value="Asia&#x2F;Bahrain" >Asia/Bahrain</option>
+                                                            <option value="Asia&#x2F;Baku" >Asia/Baku</option>
+                                                            <option value="Asia&#x2F;Bangkok" >Asia/Bangkok</option>
+                                                            <option value="Asia&#x2F;Barnaul" >Asia/Barnaul</option>
+                                                            <option value="Asia&#x2F;Beirut" >Asia/Beirut</option>
+                                                            <option value="Asia&#x2F;Bishkek" >Asia/Bishkek</option>
+                                                            <option value="Asia&#x2F;Brunei" >Asia/Brunei</option>
+                                                            <option value="Asia&#x2F;Chita" >Asia/Chita</option>
+                                                            <option value="Asia&#x2F;Choibalsan" >Asia/Choibalsan</option>
+                                                            <option value="Asia&#x2F;Colombo" >Asia/Colombo</option>
+                                                            <option value="Asia&#x2F;Damascus" >Asia/Damascus</option>
+                                                            <option value="Asia&#x2F;Dhaka" >Asia/Dhaka</option>
+                                                            <option value="Asia&#x2F;Dili" >Asia/Dili</option>
+                                                            <option value="Asia&#x2F;Dubai" >Asia/Dubai</option>
+                                                            <option value="Asia&#x2F;Dushanbe" >Asia/Dushanbe</option>
+                                                            <option value="Asia&#x2F;Famagusta" >Asia/Famagusta</option>
+                                                            <option value="Asia&#x2F;Gaza" >Asia/Gaza</option>
+                                                            <option value="Asia&#x2F;Hebron" >Asia/Hebron</option>
+                                                            <option value="Asia&#x2F;Ho_Chi_Minh" >Asia/Ho_Chi_Minh</option>
+                                                            <option value="Asia&#x2F;Hong_Kong" >Asia/Hong_Kong</option>
+                                                            <option value="Asia&#x2F;Hovd" >Asia/Hovd</option>
+                                                            <option value="Asia&#x2F;Irkutsk" >Asia/Irkutsk</option>
+                                                            <option value="Asia&#x2F;Jakarta" selected>Asia/Jakarta</option>
+                                                            <option value="Asia&#x2F;Jayapura" >Asia/Jayapura</option>
+                                                            <option value="Asia&#x2F;Jerusalem" >Asia/Jerusalem</option>
+                                                            <option value="Asia&#x2F;Kabul" >Asia/Kabul</option>
+                                                            <option value="Asia&#x2F;Kamchatka" >Asia/Kamchatka</option>
+                                                            <option value="Asia&#x2F;Karachi" >Asia/Karachi</option>
+                                                            <option value="Asia&#x2F;Kathmandu" >Asia/Kathmandu</option>
+                                                            <option value="Asia&#x2F;Khandyga" >Asia/Khandyga</option>
+                                                            <option value="Asia&#x2F;Kolkata" >Asia/Kolkata</option>
+                                                            <option value="Asia&#x2F;Krasnoyarsk" >Asia/Krasnoyarsk</option>
+                                                            <option value="Asia&#x2F;Kuala_Lumpur" >Asia/Kuala_Lumpur</option>
+                                                            <option value="Asia&#x2F;Kuching" >Asia/Kuching</option>
+                                                            <option value="Asia&#x2F;Kuwait" >Asia/Kuwait</option>
+                                                            <option value="Asia&#x2F;Macau" >Asia/Macau</option>
+                                                            <option value="Asia&#x2F;Magadan" >Asia/Magadan</option>
+                                                            <option value="Asia&#x2F;Makassar" >Asia/Makassar</option>
+                                                            <option value="Asia&#x2F;Manila" >Asia/Manila</option>
+                                                            <option value="Asia&#x2F;Muscat" >Asia/Muscat</option>
+                                                            <option value="Asia&#x2F;Nicosia" >Asia/Nicosia</option>
+                                                            <option value="Asia&#x2F;Novokuznetsk" >Asia/Novokuznetsk</option>
+                                                            <option value="Asia&#x2F;Novosibirsk" >Asia/Novosibirsk</option>
+                                                            <option value="Asia&#x2F;Omsk" >Asia/Omsk</option>
+                                                            <option value="Asia&#x2F;Oral" >Asia/Oral</option>
+                                                            <option value="Asia&#x2F;Phnom_Penh" >Asia/Phnom_Penh</option>
+                                                            <option value="Asia&#x2F;Pontianak" >Asia/Pontianak</option>
+                                                            <option value="Asia&#x2F;Pyongyang" >Asia/Pyongyang</option>
+                                                            <option value="Asia&#x2F;Qatar" >Asia/Qatar</option>
+                                                            <option value="Asia&#x2F;Qostanay" >Asia/Qostanay</option>
+                                                            <option value="Asia&#x2F;Qyzylorda" >Asia/Qyzylorda</option>
+                                                            <option value="Asia&#x2F;Riyadh" >Asia/Riyadh</option>
+                                                            <option value="Asia&#x2F;Sakhalin" >Asia/Sakhalin</option>
+                                                            <option value="Asia&#x2F;Samarkand" >Asia/Samarkand</option>
+                                                            <option value="Asia&#x2F;Seoul" >Asia/Seoul</option>
+                                                            <option value="Asia&#x2F;Shanghai" >Asia/Shanghai</option>
+                                                            <option value="Asia&#x2F;Singapore" >Asia/Singapore</option>
+                                                            <option value="Asia&#x2F;Srednekolymsk" >Asia/Srednekolymsk</option>
+                                                            <option value="Asia&#x2F;Taipei" >Asia/Taipei</option>
+                                                            <option value="Asia&#x2F;Tashkent" >Asia/Tashkent</option>
+                                                            <option value="Asia&#x2F;Tbilisi" >Asia/Tbilisi</option>
+                                                            <option value="Asia&#x2F;Tehran" >Asia/Tehran</option>
+                                                            <option value="Asia&#x2F;Thimphu" >Asia/Thimphu</option>
+                                                            <option value="Asia&#x2F;Tokyo" >Asia/Tokyo</option>
+                                                            <option value="Asia&#x2F;Tomsk" >Asia/Tomsk</option>
+                                                            <option value="Asia&#x2F;Ulaanbaatar" >Asia/Ulaanbaatar</option>
+                                                            <option value="Asia&#x2F;Urumqi" >Asia/Urumqi</option>
+                                                            <option value="Asia&#x2F;Ust-Nera" >Asia/Ust-Nera</option>
+                                                            <option value="Asia&#x2F;Vientiane" >Asia/Vientiane</option>
+                                                            <option value="Asia&#x2F;Vladivostok" >Asia/Vladivostok</option>
+                                                            <option value="Asia&#x2F;Yakutsk" >Asia/Yakutsk</option>
+                                                            <option value="Asia&#x2F;Yangon" >Asia/Yangon</option>
+                                                            <option value="Asia&#x2F;Yekaterinburg" >Asia/Yekaterinburg</option>
+                                                            <option value="Asia&#x2F;Yerevan" >Asia/Yerevan</option>
+                                                            <option value="Atlantic&#x2F;Azores" >Atlantic/Azores</option>
+                                                            <option value="Atlantic&#x2F;Bermuda" >Atlantic/Bermuda</option>
+                                                            <option value="Atlantic&#x2F;Canary" >Atlantic/Canary</option>
+                                                            <option value="Atlantic&#x2F;Cape_Verde" >Atlantic/Cape_Verde</option>
+                                                            <option value="Atlantic&#x2F;Faroe" >Atlantic/Faroe</option>
+                                                            <option value="Atlantic&#x2F;Madeira" >Atlantic/Madeira</option>
+                                                            <option value="Atlantic&#x2F;Reykjavik" >Atlantic/Reykjavik</option>
+                                                            <option value="Atlantic&#x2F;South_Georgia" >Atlantic/South_Georgia</option>
+                                                            <option value="Atlantic&#x2F;St_Helena" >Atlantic/St_Helena</option>
+                                                            <option value="Atlantic&#x2F;Stanley" >Atlantic/Stanley</option>
+                                                            <option value="Australia&#x2F;Adelaide" >Australia/Adelaide</option>
+                                                            <option value="Australia&#x2F;Brisbane" >Australia/Brisbane</option>
+                                                            <option value="Australia&#x2F;Broken_Hill" >Australia/Broken_Hill</option>
+                                                            <option value="Australia&#x2F;Darwin" >Australia/Darwin</option>
+                                                            <option value="Australia&#x2F;Eucla" >Australia/Eucla</option>
+                                                            <option value="Australia&#x2F;Hobart" >Australia/Hobart</option>
+                                                            <option value="Australia&#x2F;Lindeman" >Australia/Lindeman</option>
+                                                            <option value="Australia&#x2F;Lord_Howe" >Australia/Lord_Howe</option>
+                                                            <option value="Australia&#x2F;Melbourne" >Australia/Melbourne</option>
+                                                            <option value="Australia&#x2F;Perth" >Australia/Perth</option>
+                                                            <option value="Australia&#x2F;Sydney" >Australia/Sydney</option>
+                                                            <option value="Europe&#x2F;Amsterdam" >Europe/Amsterdam</option>
+                                                            <option value="Europe&#x2F;Andorra" >Europe/Andorra</option>
+                                                            <option value="Europe&#x2F;Astrakhan" >Europe/Astrakhan</option>
+                                                            <option value="Europe&#x2F;Athens" >Europe/Athens</option>
+                                                            <option value="Europe&#x2F;Belgrade" >Europe/Belgrade</option>
+                                                            <option value="Europe&#x2F;Berlin" >Europe/Berlin</option>
+                                                            <option value="Europe&#x2F;Bratislava" >Europe/Bratislava</option>
+                                                            <option value="Europe&#x2F;Brussels" >Europe/Brussels</option>
+                                                            <option value="Europe&#x2F;Bucharest" >Europe/Bucharest</option>
+                                                            <option value="Europe&#x2F;Budapest" >Europe/Budapest</option>
+                                                            <option value="Europe&#x2F;Busingen" >Europe/Busingen</option>
+                                                            <option value="Europe&#x2F;Chisinau" >Europe/Chisinau</option>
+                                                            <option value="Europe&#x2F;Copenhagen" >Europe/Copenhagen</option>
+                                                            <option value="Europe&#x2F;Dublin" >Europe/Dublin</option>
+                                                            <option value="Europe&#x2F;Gibraltar" >Europe/Gibraltar</option>
+                                                            <option value="Europe&#x2F;Guernsey" >Europe/Guernsey</option>
+                                                            <option value="Europe&#x2F;Helsinki" >Europe/Helsinki</option>
+                                                            <option value="Europe&#x2F;Isle_of_Man" >Europe/Isle_of_Man</option>
+                                                            <option value="Europe&#x2F;Istanbul" >Europe/Istanbul</option>
+                                                            <option value="Europe&#x2F;Jersey" >Europe/Jersey</option>
+                                                            <option value="Europe&#x2F;Kaliningrad" >Europe/Kaliningrad</option>
+                                                            <option value="Europe&#x2F;Kirov" >Europe/Kirov</option>
+                                                            <option value="Europe&#x2F;Kyiv" >Europe/Kyiv</option>
+                                                            <option value="Europe&#x2F;Lisbon" >Europe/Lisbon</option>
+                                                            <option value="Europe&#x2F;Ljubljana" >Europe/Ljubljana</option>
+                                                            <option value="Europe&#x2F;London" >Europe/London</option>
+                                                            <option value="Europe&#x2F;Luxembourg" >Europe/Luxembourg</option>
+                                                            <option value="Europe&#x2F;Madrid" >Europe/Madrid</option>
+                                                            <option value="Europe&#x2F;Malta" >Europe/Malta</option>
+                                                            <option value="Europe&#x2F;Mariehamn" >Europe/Mariehamn</option>
+                                                            <option value="Europe&#x2F;Minsk" >Europe/Minsk</option>
+                                                            <option value="Europe&#x2F;Monaco" >Europe/Monaco</option>
+                                                            <option value="Europe&#x2F;Moscow" >Europe/Moscow</option>
+                                                            <option value="Europe&#x2F;Oslo" >Europe/Oslo</option>
+                                                            <option value="Europe&#x2F;Paris" >Europe/Paris</option>
+                                                            <option value="Europe&#x2F;Podgorica" >Europe/Podgorica</option>
+                                                            <option value="Europe&#x2F;Prague" >Europe/Prague</option>
+                                                            <option value="Europe&#x2F;Riga" >Europe/Riga</option>
+                                                            <option value="Europe&#x2F;Rome" >Europe/Rome</option>
+                                                            <option value="Europe&#x2F;Samara" >Europe/Samara</option>
+                                                            <option value="Europe&#x2F;San_Marino" >Europe/San_Marino</option>
+                                                            <option value="Europe&#x2F;Sarajevo" >Europe/Sarajevo</option>
+                                                            <option value="Europe&#x2F;Saratov" >Europe/Saratov</option>
+                                                            <option value="Europe&#x2F;Simferopol" >Europe/Simferopol</option>
+                                                            <option value="Europe&#x2F;Skopje" >Europe/Skopje</option>
+                                                            <option value="Europe&#x2F;Sofia" >Europe/Sofia</option>
+                                                            <option value="Europe&#x2F;Stockholm" >Europe/Stockholm</option>
+                                                            <option value="Europe&#x2F;Tallinn" >Europe/Tallinn</option>
+                                                            <option value="Europe&#x2F;Tirane" >Europe/Tirane</option>
+                                                            <option value="Europe&#x2F;Ulyanovsk" >Europe/Ulyanovsk</option>
+                                                            <option value="Europe&#x2F;Vaduz" >Europe/Vaduz</option>
+                                                            <option value="Europe&#x2F;Vatican" >Europe/Vatican</option>
+                                                            <option value="Europe&#x2F;Vienna" >Europe/Vienna</option>
+                                                            <option value="Europe&#x2F;Vilnius" >Europe/Vilnius</option>
+                                                            <option value="Europe&#x2F;Volgograd" >Europe/Volgograd</option>
+                                                            <option value="Europe&#x2F;Warsaw" >Europe/Warsaw</option>
+                                                            <option value="Europe&#x2F;Zagreb" >Europe/Zagreb</option>
+                                                            <option value="Europe&#x2F;Zurich" >Europe/Zurich</option>
+                                                            <option value="Indian&#x2F;Antananarivo" >Indian/Antananarivo</option>
+                                                            <option value="Indian&#x2F;Chagos" >Indian/Chagos</option>
+                                                            <option value="Indian&#x2F;Christmas" >Indian/Christmas</option>
+                                                            <option value="Indian&#x2F;Cocos" >Indian/Cocos</option>
+                                                            <option value="Indian&#x2F;Comoro" >Indian/Comoro</option>
+                                                            <option value="Indian&#x2F;Kerguelen" >Indian/Kerguelen</option>
+                                                            <option value="Indian&#x2F;Mahe" >Indian/Mahe</option>
+                                                            <option value="Indian&#x2F;Maldives" >Indian/Maldives</option>
+                                                            <option value="Indian&#x2F;Mauritius" >Indian/Mauritius</option>
+                                                            <option value="Indian&#x2F;Mayotte" >Indian/Mayotte</option>
+                                                            <option value="Indian&#x2F;Reunion" >Indian/Reunion</option>
+                                                            <option value="Pacific&#x2F;Apia" >Pacific/Apia</option>
+                                                            <option value="Pacific&#x2F;Auckland" >Pacific/Auckland</option>
+                                                            <option value="Pacific&#x2F;Bougainville" >Pacific/Bougainville</option>
+                                                            <option value="Pacific&#x2F;Chatham" >Pacific/Chatham</option>
+                                                            <option value="Pacific&#x2F;Chuuk" >Pacific/Chuuk</option>
+                                                            <option value="Pacific&#x2F;Easter" >Pacific/Easter</option>
+                                                            <option value="Pacific&#x2F;Efate" >Pacific/Efate</option>
+                                                            <option value="Pacific&#x2F;Fakaofo" >Pacific/Fakaofo</option>
+                                                            <option value="Pacific&#x2F;Fiji" >Pacific/Fiji</option>
+                                                            <option value="Pacific&#x2F;Funafuti" >Pacific/Funafuti</option>
+                                                            <option value="Pacific&#x2F;Galapagos" >Pacific/Galapagos</option>
+                                                            <option value="Pacific&#x2F;Gambier" >Pacific/Gambier</option>
+                                                            <option value="Pacific&#x2F;Guadalcanal" >Pacific/Guadalcanal</option>
+                                                            <option value="Pacific&#x2F;Guam" >Pacific/Guam</option>
+                                                            <option value="Pacific&#x2F;Honolulu" >Pacific/Honolulu</option>
+                                                            <option value="Pacific&#x2F;Kanton" >Pacific/Kanton</option>
+                                                            <option value="Pacific&#x2F;Kiritimati" >Pacific/Kiritimati</option>
+                                                            <option value="Pacific&#x2F;Kosrae" >Pacific/Kosrae</option>
+                                                            <option value="Pacific&#x2F;Kwajalein" >Pacific/Kwajalein</option>
+                                                            <option value="Pacific&#x2F;Majuro" >Pacific/Majuro</option>
+                                                            <option value="Pacific&#x2F;Marquesas" >Pacific/Marquesas</option>
+                                                            <option value="Pacific&#x2F;Midway" >Pacific/Midway</option>
+                                                            <option value="Pacific&#x2F;Nauru" >Pacific/Nauru</option>
+                                                            <option value="Pacific&#x2F;Niue" >Pacific/Niue</option>
+                                                            <option value="Pacific&#x2F;Norfolk" >Pacific/Norfolk</option>
+                                                            <option value="Pacific&#x2F;Noumea" >Pacific/Noumea</option>
+                                                            <option value="Pacific&#x2F;Pago_Pago" >Pacific/Pago_Pago</option>
+                                                            <option value="Pacific&#x2F;Palau" >Pacific/Palau</option>
+                                                            <option value="Pacific&#x2F;Pitcairn" >Pacific/Pitcairn</option>
+                                                            <option value="Pacific&#x2F;Pohnpei" >Pacific/Pohnpei</option>
+                                                            <option value="Pacific&#x2F;Port_Moresby" >Pacific/Port_Moresby</option>
+                                                            <option value="Pacific&#x2F;Rarotonga" >Pacific/Rarotonga</option>
+                                                            <option value="Pacific&#x2F;Saipan" >Pacific/Saipan</option>
+                                                            <option value="Pacific&#x2F;Tahiti" >Pacific/Tahiti</option>
+                                                            <option value="Pacific&#x2F;Tarawa" >Pacific/Tarawa</option>
+                                                            <option value="Pacific&#x2F;Tongatapu" >Pacific/Tongatapu</option>
+                                                            <option value="Pacific&#x2F;Wake" >Pacific/Wake</option>
+                                                            <option value="Pacific&#x2F;Wallis" >Pacific/Wallis</option>
+                                                            <option value="UTC" >UTC</option>
+                                                    </select>
+                    </div>
+                    <div class="col-12">
+                        <label class="form-label" for="profileBio">Short bio</label>
+                        <textarea class="form-control" id="profileBio" name="bio" rows="3" maxlength="1000" placeholder="Shown on your author archive and article bylines.">Founder of DESTRA CMS. Writing about calm, fast publishing.</textarea>
+                    </div>
+                    <div class="col-md-6">
+                        <label class="form-label d-block">Avatar</label>
+                        <input type="hidden" name="avatar" id="profileAvatarId" value="0">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="dst-avatar-lg" id="profileAvatarPreview">
+                                                                    <span>DO</span>
+                                                            </div>
+                            <div class="d-flex flex-column gap-2">
+                                <button type="button" class="btn btn-soft btn-sm" data-media-picker="#profileAvatarId" data-media-preview="#profileAvatarPreview"><i class="fa-regular fa-image me-1"></i>Choose avatar</button>
+                                <button type="button" class="btn btn-soft btn-sm" data-media-clear="#profileAvatarId" data-media-preview="#profileAvatarPreview"><i class="fa-solid fa-xmark me-1"></i>Remove</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="d-flex justify-content-end mt-4">
+                    <button class="btn btn-brand" type="submit"><i class="fa-solid fa-floppy-disk me-2"></i>Save changes</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="dst-card mt-3">
+            <div class="card-header">
+                <h2 class="card-title">Password</h2>
+                <span class="dst-chip"><i class="fa-solid fa-shield-halved me-1"></i>Argon2id</span>
+            </div>
+            <form method="post" action="http://localhost:8080/admin/profile/password" class="card-body">
+                <input type="hidden" name="destra_csrf" value="ed0fa763b54cad30c76e64d0ff18559f">                <div class="row g-3">
+                    <div class="col-md-4">
+                        <label class="form-label" for="currentPassword">Current password</label>
+                        <input type="password" class="form-control" id="currentPassword" name="current_password" autocomplete="current-password" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="newPassword">New password</label>
+                        <input type="password" class="form-control" id="newPassword" name="new_password" autocomplete="new-password" required>
+                    </div>
+                    <div class="col-md-4">
+                        <label class="form-label" for="confirmPassword">Confirm new password</label>
+                        <input type="password" class="form-control" id="confirmPassword" name="confirm_password" autocomplete="new-password" required>
+                    </div>
+                </div>
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-3">
+                    <span class="text-muted-2 small">At least 10 characters with letters and numbers. Changing it signs out other remembered devices.</span>
+                    <button class="btn btn-brand" type="submit"><i class="fa-solid fa-key me-2"></i>Update password</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="dst-card mt-3">
+            <div class="card-header">
+                <h2 class="card-title">Workspace appearance</h2>
+                <span class="dst-chip">4 colour schemes</span>
+            </div>
+            <form method="post" action="http://localhost:8080/admin/profile/preferences" class="card-body" id="profileSchemeForm">
+                <input type="hidden" name="destra_csrf" value="ed0fa763b54cad30c76e64d0ff18559f">                <div class="row g-2">
+                                            <div class="col-6 col-md-3">
+                            <label class="scheme-option is-active">
+                                <input type="radio" name="admin_scheme" value="midnight" checked>
+                                <span class="scheme-swatch" style="background:linear-gradient(135deg, &#x23;0f172a, &#x23;6366f1);"></span>
+                                <span class="scheme-name">Midnight</span>
+                            </label>
+                        </div>
+                                            <div class="col-6 col-md-3">
+                            <label class="scheme-option ">
+                                <input type="radio" name="admin_scheme" value="emerald" >
+                                <span class="scheme-swatch" style="background:linear-gradient(135deg, &#x23;052e2b, &#x23;10b981);"></span>
+                                <span class="scheme-name">Emerald</span>
+                            </label>
+                        </div>
+                                            <div class="col-6 col-md-3">
+                            <label class="scheme-option ">
+                                <input type="radio" name="admin_scheme" value="sunset" >
+                                <span class="scheme-swatch" style="background:linear-gradient(135deg, &#x23;2a0f0a, &#x23;f97316);"></span>
+                                <span class="scheme-name">Sunset</span>
+                            </label>
+                        </div>
+                                            <div class="col-6 col-md-3">
+                            <label class="scheme-option ">
+                                <input type="radio" name="admin_scheme" value="royal" >
+                                <span class="scheme-swatch" style="background:linear-gradient(135deg, &#x23;0b1b3f, &#x23;2563eb);"></span>
+                                <span class="scheme-name">Royal</span>
+                            </label>
+                        </div>
+                                    </div>
+                <div class="d-flex flex-wrap justify-content-between align-items-center gap-2 mt-3">
+                    <span class="text-muted-2 small">Applies to your account only. Leave all unselected to follow the site-wide scheme.</span>
+                    <button class="btn btn-soft" type="submit"><i class="fa-solid fa-palette me-2"></i>Apply scheme</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div class="col-xl-4">
+        <div class="dst-card">
+            <div class="card-header"><h2 class="card-title">At a glance</h2></div>
+            <div class="card-body d-grid gap-2">
+                <div class="profile-stat"><span>Content</span><strong>10</strong></div>
+                <div class="profile-stat"><span>Published</span><strong>10</strong></div>
+                <div class="profile-stat"><span>Media uploads</span><strong>3</strong></div>
+                <div class="profile-stat"><span>Comments</span><strong>1</strong></div>
+            </div>
+        </div>
+
+        <div class="dst-card mt-3">
+            <div class="card-header"><h2 class="card-title">Account</h2></div>
+            <div class="card-body">
+                <div class="dst-link-row"><i class="fa-solid fa-id-badge text-muted-2"></i><div class="min-w-0 flex-grow-1"><div class="small text-muted-2">Role</div><div class="fw-650">Super Admin</div></div></div>
+                <div class="dst-link-row"><i class="fa-solid fa-right-to-bracket text-muted-2"></i><div class="min-w-0 flex-grow-1"><div class="small text-muted-2">Last sign-in</div><div class="fw-650">Oct 29, 2026 08:09</div><div class="text-muted-2 small">55ae5614f3c2af30764b17f2d3cf2ea00c4ceba8c9641c152efbbf94cf4cf20d</div></div></div>
+                <div class="dst-link-row"><i class="fa-regular fa-envelope text-muted-2"></i><div class="min-w-0 flex-grow-1"><div class="small text-muted-2">Email status</div><div class="fw-650">Verified</div></div></div>
+                <div class="dst-link-row"><i class="fa-solid fa-key text-muted-2"></i><div class="min-w-0 flex-grow-1"><div class="small text-muted-2">API tokens</div><a class="fw-650" href="http://localhost:8080/admin/api-tokens">Manage tokens</a></div></div>
+            </div>
+        </div>
+
+        <div class="dst-card mt-3">
+            <div class="card-header"><h2 class="card-title">Recent sign-ins</h2></div>
+            <div class="card-body p-0">
+                                    <div class="px-3 py-2">
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-circle-check text-success"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650">Oct 29, 2026 08:09</div>
+                                    <div class="text-muted-2 small truncate">::1 · curl/8.17.0</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-circle-check text-success"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650">Oct 29, 2026 08:02</div>
+                                    <div class="text-muted-2 small truncate">::1 · curl/8.17.0</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-circle-check text-success"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650">Oct 29, 2026 07:58</div>
+                                    <div class="text-muted-2 small truncate">::1 · Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Qoder/0.4.11 Chrome/150.0.7871.114 Electron/43.1.1 Safari/537.36</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-circle-check text-success"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650">Oct 29, 2026 07:55</div>
+                                    <div class="text-muted-2 small truncate">::1 · curl/8.17.0</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-circle-check text-success"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650">Oct 29, 2026 07:52</div>
+                                    <div class="text-muted-2 small truncate">::1 · curl/8.17.0</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-circle-xmark text-danger"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650">Oct 29, 2026 07:51</div>
+                                    <div class="text-muted-2 small truncate">::1 · curl/8.17.0</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-circle-check text-success"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650">Oct 29, 2026 07:42</div>
+                                    <div class="text-muted-2 small truncate">::1 · curl/8.17.0</div>
+                                </div>
+                            </div>
+                                            </div>
+                            </div>
+        </div>
+
+        <div class="dst-card mt-3">
+            <div class="card-header"><h2 class="card-title">Your activity</h2></div>
+            <div class="card-body p-0">
+                                    <div class="px-3 py-2">
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-clock-rotate-left text-muted-2"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650 truncate">Updated own profile</div>
+                                    <div class="text-muted-2 small">Oct 29, 2026 08:31 · users</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-clock-rotate-left text-muted-2"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650 truncate">Deleted API token &quot;Zapier bridge&quot;</div>
+                                    <div class="text-muted-2 small">Oct 29, 2026 08:28 · api</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-clock-rotate-left text-muted-2"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650 truncate">Revoked API token &quot;Zapier bridge&quot;</div>
+                                    <div class="text-muted-2 small">Oct 29, 2026 08:28 · api</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-clock-rotate-left text-muted-2"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650 truncate">Created API token &quot;Zapier bridge&quot;</div>
+                                    <div class="text-muted-2 small">Oct 29, 2026 08:28 · api</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-clock-rotate-left text-muted-2"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650 truncate">Pruned audit entries older than 180 days</div>
+                                    <div class="text-muted-2 small">Oct 29, 2026 08:27 · tools</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-clock-rotate-left text-muted-2"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650 truncate">Disabled maintenance mode</div>
+                                    <div class="text-muted-2 small">Oct 29, 2026 08:27 · tools</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-clock-rotate-left text-muted-2"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650 truncate">Enabled maintenance mode</div>
+                                    <div class="text-muted-2 small">Oct 29, 2026 08:27 · tools</div>
+                                </div>
+                            </div>
+                                                    <div class="profile-login">
+                                <i class="fa-solid fa-clock-rotate-left text-muted-2"></i>
+                                <div class="min-w-0 flex-grow-1">
+                                    <div class="small fw-650 truncate">Flushed every application cache</div>
+                                    <div class="text-muted-2 small">Oct 29, 2026 08:27 · tools</div>
+                                </div>
+                            </div>
+                                            </div>
+                            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="mediaPickerModal" tabindex="-1" aria-labelledby="mediaPickerTitle" aria-hidden="true"
+     data-picker-url="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;media&#x2F;picker"
+     data-picker-upload="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;media&#x2F;upload">
+    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header flex-wrap gap-2">
+                <div class="min-w-0">
+                    <h2 class="modal-title h5 mb-0" id="mediaPickerTitle">Media library</h2>
+                    <p class="text-muted-2 small mb-0">Pick an image from your library or upload a new one.</p>
+                </div>
+                <div class="d-flex gap-2 ms-auto">
+                    <label class="btn btn-soft btn-sm mb-0">
+                        <i class="fa-solid fa-cloud-arrow-up me-1"></i> Upload
+                        <input type="file" class="d-none" accept="image/*" multiple data-picker-upload-input>
+                    </label>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+            </div>
+            <div class="modal-body">
+                <div class="input-group mb-3">
+                    <span class="input-group-text bg-transparent"><i class="fa-solid fa-magnifying-glass"></i></span>
+                    <input type="search" class="form-control" placeholder="Search images by file name…" data-picker-search autocomplete="off">
+                </div>
+                <div class="media-grid" data-picker-grid aria-live="polite"></div>
+                <div class="dst-empty" data-picker-empty hidden>
+                    <i class="fa-regular fa-images"></i>
+                    <h3>No images found</h3>
+                    <p>Upload your first image to start building the library.</p>
+                </div>
+                <div class="dst-empty" data-picker-loading hidden>
+                    <i class="fa-solid fa-circle-notch fa-spin"></i>
+                    <h3>Loading library…</h3>
+                </div>
+            </div>
+            <div class="modal-footer justify-content-between">
+                <span class="text-muted-2 small">Files are re-encoded and stored safely outside the web root.</span>
+                <button type="button" class="btn btn-soft" data-bs-dismiss="modal">Cancel</button>
+            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <div class="container-fluid d-flex flex-wrap justify-content-between gap-2 py-2">
+                <span>&copy; 2026 DESTRA Studio. All rights reserved.</span>
+                <span>DESTRA CMS v1.0.0 · Aurora</span>
+            </div>
+        </footer>
+    </div>
+
+    <nav class="dst-mobile-nav" aria-label="Quick navigation">
+        <a href="http://localhost:8080/admin" class=""><i class="fa-solid fa-gauge-high"></i>Home</a>
+        <a href="http://localhost:8080/admin/content" class=""><i class="fa-regular fa-file-lines"></i>Content</a>
+        <a href="http://localhost:8080/admin/media" class=""><i class="fa-regular fa-images"></i>Media</a>
+        <a href="http://localhost:8080/admin/comments" class=""><i class="fa-regular fa-comments"></i>Comments</a>
+        <a href="#" data-lte-toggle="sidebar"><i class="fa-solid fa-bars"></i>Menu</a>
+    </nav>
+
+    <script src="http://localhost:8080/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://localhost:8080/vendor/adminlte/js/adminlte.min.js"></script>
+    <script src="http://localhost:8080/vendor/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="http://localhost:8080/vendor/chartjs/chart.umd.js"></script>
+    <script src="http://localhost:8080/vendor/sortablejs/Sortable.min.js"></script>
+    <script src="http://localhost:8080/assets/admin/admin.js?v=1793235006"></script>
+    <script nonce="u7IU8QE05AcUyz_k6tYNC3BY">
+(function () {
+    var schemeForm = document.getElementById('profileSchemeForm');
+    if (!schemeForm) { return; }
+
+    schemeForm.querySelectorAll('input[name="admin_scheme"]').forEach(function (input) {
+        input.addEventListener('change', function () {
+            schemeForm.querySelectorAll('.scheme-option').forEach(function (option) {
+                option.classList.toggle('is-active', option.querySelector('input').checked);
+            });
+        });
+    });
+
+    schemeForm.addEventListener('submit', function (event) {
+        event.preventDefault();
+        var chosen = schemeForm.querySelector('input[name="admin_scheme"]:checked');
+        var button = schemeForm.querySelector('button[type="submit"]');
+        if (!chosen) { Destra.toast('error', 'Choose a colour scheme first.'); return; }
+        button.disabled = true;
+        Destra.postForm(schemeForm.action, { admin_scheme: chosen.value }).then(function (json) {
+            Destra.toast(json.success === false ? 'error' : 'success', json.message || json.error || 'Saved');
+            if (json.success !== false) { setTimeout(function () { window.location.reload(); }, 500); }
+            else { button.disabled = false; }
+        }).catch(function () {
+            button.disabled = false;
+            Destra.toast('error', 'Network error — please retry.');
+        });
+    });
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,62 @@
+/* ==========================================================================
+   DESTRA theme: Modern
+   The base design system already ships this look. The overrides below give
+   the theme a slightly more expressive editorial rhythm without fighting the
+   Appearance settings (inline :root tokens win over these defaults).
+   ========================================================================== */
+
+:root {
+    --dst-radius: 18px;
+    --dst-radius-sm: 10px;
+    --dst-radius-lg: 26px;
+    --dst-surface: #ffffff;
+    --dst-soft: #f6f7fc;
+    --dst-bg: #fbfbfe;
+    --dst-line: #e6e9f2;
+}
+
+.dst-display {
+    letter-spacing: -.035em;
+    line-height: 1.06;
+}
+
+.dst-home-hero__intro .dst-display {
+    font-size: clamp(2.2rem, 1.4rem + 2.6vw, 3.6rem);
+}
+
+.dst-header {
+    backdrop-filter: saturate(160%) blur(14px);
+    -webkit-backdrop-filter: saturate(160%) blur(14px);
+}
+
+.dst-header.is-stuck {
+    border-bottom-color: color-mix(in srgb, var(--dst-primary) 12%, var(--dst-line));
+}
+
+.dst-section-title {
+    letter-spacing: -.025em;
+}
+
+.dst-home-hero__feature .dst-card--hero {
+    min-height: 480px;
+}
+
+.dst-card--grid:hover .dst-chip--overlay {
+    color: var(--dst-primary);
+}
+
+.dst-band--split {
+    border-radius: var(--dst-radius-lg);
+}
+
+.dst-footer {
+    background:
+        radial-gradient(40rem 20rem at 85% 0%, color-mix(in srgb, var(--dst-primary) 22%, transparent), transparent 60%),
+        #0a0f1d;
+}
+
+@media (max-width: 720px) {
+    .dst-home-hero__intro .dst-display {
+        font-size: clamp(1.9rem, 1.3rem + 3vw, 2.5rem);
+    }
+}

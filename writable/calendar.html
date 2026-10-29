@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-base="http://localhost:8080/" data-bs-theme="light" data-scheme="emerald">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Calendar · DESTRA Studio</title>
+    <meta name="destra_csrf" content="ed0fa763b54cad30c76e64d0ff18559f">
+    <link rel="icon" href="http://localhost:8080/favicon.ico">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/adminlte/css/adminlte.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/bootstrap-icons/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/vendor/sweetalert2/sweetalert2.min.css">
+    <link rel="stylesheet" href="http://localhost:8080/assets/admin/admin.css?v=1793237653">
+    </head>
+<body class="layout-fixed sidebar-expand-lg app-body">
+    <div class="app-wrapper">
+        <nav class="app-header navbar navbar-expand bg-body">
+            <div class="container-fluid">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link dst-icon-btn" data-lte-toggle="sidebar" href="#" role="button" aria-label="Toggle sidebar">
+                            <i class="fa-solid fa-bars-staggered"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-none d-md-flex align-items-center ms-2">
+                        <form class="dst-search" action="http://localhost:8080/admin/search" method="get" role="search">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <input type="search" name="q" value="" placeholder="Search content, media, users…" aria-label="Search">
+                            <kbd>⌘K</kbd>
+                        </form>
+                    </li>
+                </ul>
+
+                <ul class="navbar-nav ms-auto align-items-center gap-1">
+                    <li class="nav-item dropdown d-none d-sm-block">
+                        <a class="nav-link dst-icon-btn" href="http://localhost:8080/" target="_blank" rel="noopener" title="View website">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dst-icon-btn" href="http://localhost:8080/admin/notifications" title="Notifications">
+                            <i class="fa-regular fa-bell"></i>
+                                                    </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="nav-link dst-icon-btn" type="button" data-dst-theme-toggle title="Toggle dark mode">
+                            <i class="fa-solid fa-circle-half-stroke"></i>
+                        </button>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <button class="dst-user-btn dropdown-toggle" data-bs-toggle="dropdown" type="button" aria-expanded="false">
+                            <span class="dst-avatar">D</span>
+                            <span class="d-none d-lg-block">
+                                <span class="dst-user-name d-block">Destra Owner</span>
+                                <span class="dst-user-role">Super Admin</span>
+                            </span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end shadow border-0" style="border-radius:14px;min-width:230px;">
+                            <li class="px-3 py-2">
+                                <div class="fw-semibold">Destra Owner</div>
+                                <div class="text-muted-2 small">owner@destra.test</div>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="http://localhost:8080/admin/profile"><i class="fa-regular fa-user me-2"></i>My profile</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8080/admin/settings"><i class="fa-solid fa-gear me-2"></i>Settings</a></li>
+                            <li><a class="dropdown-item" href="http://localhost:8080/" target="_blank"><i class="fa-solid fa-globe me-2"></i>View website</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <form method="post" action="http://localhost:8080/logout">
+                                    <input type="hidden" name="destra_csrf" value="ed0fa763b54cad30c76e64d0ff18559f">                                    <button class="dropdown-item text-danger" type="submit"><i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Sign out</button>
+                                </form>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <aside class="app-sidebar shadow" data-bs-theme="dark">
+    <div class="sidebar-brand">
+        <span class="dst-brand-mark">D</span>
+        <span>
+            <span class="dst-brand-name">DESTRA</span>
+            <span class="dst-brand-sub d-block">Content platform</span>
+        </span>
+    </div>
+
+    <div class="sidebar-wrapper">
+        <nav class="mt-1" role="navigation">
+            <ul class="nav sidebar-menu flex-column" data-lte-toggle="treeview" role="menu" data-accordion="false">
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Overview</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin" class="nav-link"><i class="fa-solid&#x20;fa-gauge-high nav-icon"></i><p>Dashboard</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;reports" class="nav-link"><i class="fa-solid&#x20;fa-chart-line nav-icon"></i><p>Reports</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;calendar" class="nav-link active"><i class="fa-regular&#x20;fa-calendar-days nav-icon"></i><p>Calendar</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Content</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;content" class="nav-link"><i class="fa-regular&#x20;fa-file-lines nav-icon"></i><p>All content</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;content&#x3F;type&#x3D;post" class="nav-link"><i class="fa-regular&#x20;fa-newspaper nav-icon"></i><p>Posts</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;content&#x3F;type&#x3D;page" class="nav-link"><i class="fa-regular&#x20;fa-file nav-icon"></i><p>Pages</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;content&#x3F;type&#x3D;doc" class="nav-link"><i class="fa-solid&#x20;fa-book-open nav-icon"></i><p>Documentation</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;sections" class="nav-link"><i class="fa-solid&#x20;fa-layer-group nav-icon"></i><p>Sections</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;categories" class="nav-link"><i class="fa-solid&#x20;fa-folder-tree nav-icon"></i><p>Categories</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;tags" class="nav-link"><i class="fa-solid&#x20;fa-tags nav-icon"></i><p>Tags</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;comments" class="nav-link"><i class="fa-regular&#x20;fa-comments nav-icon"></i><p>Comments</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;media" class="nav-link"><i class="fa-regular&#x20;fa-images nav-icon"></i><p>Media library</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Engagement</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;forms" class="nav-link"><i class="fa-brands&#x20;fa-wpforms nav-icon"></i><p>Forms</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;inbox" class="nav-link"><i class="fa-regular&#x20;fa-envelope-open nav-icon"></i><p>Inbox</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;orders" class="nav-link"><i class="fa-solid&#x20;fa-bag-shopping nav-icon"></i><p>Orders</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;newsletter" class="nav-link"><i class="fa-regular&#x20;fa-paper-plane nav-icon"></i><p>Newsletter</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;banners" class="nav-link"><i class="fa-regular&#x20;fa-rectangle-ad nav-icon"></i><p>Banners &amp; popups</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Structure</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;menus" class="nav-link"><i class="fa-solid&#x20;fa-bars nav-icon"></i><p>Menus</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;languages" class="nav-link"><i class="fa-solid&#x20;fa-language nav-icon"></i><p>Languages</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;redirects" class="nav-link"><i class="fa-solid&#x20;fa-signs-post nav-icon"></i><p>Redirects</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;seo" class="nav-link"><i class="fa-solid&#x20;fa-magnifying-glass-chart nav-icon"></i><p>SEO suite</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">People</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;users" class="nav-link"><i class="fa-solid&#x20;fa-users nav-icon"></i><p>Users</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;roles" class="nav-link"><i class="fa-solid&#x20;fa-user-shield nav-icon"></i><p>Roles &amp; permissions</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">Appearance</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;themes" class="nav-link"><i class="fa-solid&#x20;fa-palette nav-icon"></i><p>Themes</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;plugins" class="nav-link"><i class="fa-solid&#x20;fa-plug nav-icon"></i><p>Plugins</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;settings" class="nav-link"><i class="fa-solid&#x20;fa-sliders nav-icon"></i><p>Settings</p></a></li>
+                <li class="nav-item" role="presentation"><span class="nav-link dst-group-label">System</span></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;tools" class="nav-link"><i class="fa-solid&#x20;fa-screwdriver-wrench nav-icon"></i><p>Tools &amp; cache</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;api-tokens" class="nav-link"><i class="fa-solid&#x20;fa-code nav-icon"></i><p>API tokens</p></a></li>                <li class="nav-item"><a href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;notifications" class="nav-link"><i class="fa-regular&#x20;fa-bell nav-icon"></i><p>Notifications</p></a></li>            </ul>
+        </nav>
+    </div>
+
+    <div class="dst-sidebar-foot">
+        <strong>DESTRA Studio</strong><br>
+        v1.0.0 · Aurora    </div>
+</aside>
+
+        <main class="app-main">
+            <div class="app-content-header">
+                <div class="container-fluid">
+                    <div class="row align-items-center">
+                        <div class="col-md-7">
+                            <h1>Calendar</h1>
+                                                            <div class="subtitle">Plan your editorial rhythm across every section.</div>
+                                                                                        <ol class="breadcrumb mt-2">
+                                    <li class="breadcrumb-item"><a href="http://localhost:8080/admin">Dashboard</a></li>
+                                                                                                                        <li class="breadcrumb-item active" aria-current="page">Calendar</li>
+                                                                                                            </ol>
+                                                    </div>
+                        <div class="col-md-5 text-md-end page-actions">
+                                <a class="btn btn-brand" href="http&#x3A;&#x2F;&#x2F;localhost&#x3A;8080&#x2F;admin&#x2F;content&#x2F;create"><i class="fa-solid fa-plus me-2"></i>New content</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="app-content">
+                <div class="container-fluid">
+                    <div class="dst-flash"
+                         data-success=""
+                         data-error=""></div>
+                    <div class="row g-3">
+    <div class="col-xl-9">
+        <div class="dst-card">
+            <div class="card-header flex-wrap gap-2">
+                <h2 class="card-title">Editorial calendar</h2>
+                <div class="d-flex flex-wrap gap-2 align-items-center">
+                    <span class="dst-chip"><i class="fa-solid fa-circle me-1" style="color:#10b981;font-size:8px;"></i>Published</span>
+                    <span class="dst-chip"><i class="fa-solid fa-circle me-1" style="color:#f59e0b;font-size:8px;"></i>Scheduled</span>
+                    <span class="dst-chip"><i class="fa-solid fa-circle me-1" style="color:#6366f1;font-size:8px;"></i>Draft</span>
+                    <span class="dst-chip"><i class="fa-solid fa-circle me-1" style="color:#94a3b8;font-size:8px;"></i>Expired</span>
+                </div>
+            </div>
+            <div class="card-body">
+                <div id="dstCalendar"></div>
+                <div class="text-muted-2 small mt-3"><i class="fa-regular fa-hand-pointer me-1"></i>Select an event to edit the content. Bars are placed on the publish date.</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xl-3">
+        <div class="row g-3 mb-0">
+            <div class="col-6 col-xl-12">
+                <div class="dst-stat">
+                    <span class="stat-label">Scheduled</span>
+                    <span class="stat-value">0</span>
+                    <span class="stat-foot"><i class="fa-regular fa-clock me-1"></i>waiting to go live</span>
+                </div>
+            </div>
+            <div class="col-6 col-xl-12">
+                <div class="dst-stat stat-ocean">
+                    <span class="stat-label">Published this month</span>
+                    <span class="stat-value">10</span>
+                    <span class="stat-foot"><i class="fa-regular fa-calendar-check me-1"></i>October 2026</span>
+                </div>
+            </div>
+            <div class="col-6 col-xl-12">
+                <div class="dst-stat stat-sunrise">
+                    <span class="stat-label">Drafts</span>
+                    <span class="stat-value">0</span>
+                    <span class="stat-foot"><i class="fa-regular fa-pen-to-square me-1"></i>in progress</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="dst-card mt-3">
+            <div class="card-header"><h2 class="card-title">Coming up</h2></div>
+            <div class="card-body p-0">
+                                    <div class="p-3 text-muted-2 small">Nothing scheduled. Set a future publish date on any content item.</div>
+                            </div>
+        </div>
+
+        <div class="dst-card mt-3">
+            <div class="card-header"><h2 class="card-title">Recently edited drafts</h2></div>
+            <div class="card-body p-0">
+                                    <div class="p-3 text-muted-2 small">No drafts yet — you are all caught up.</div>
+                            </div>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </main>
+
+        <footer class="app-footer">
+            <div class="container-fluid d-flex flex-wrap justify-content-between gap-2 py-2">
+                <span>&copy; 2026 DESTRA Studio. All rights reserved.</span>
+                <span>DESTRA CMS v1.0.0 · Aurora</span>
+            </div>
+        </footer>
+    </div>
+
+    <nav class="dst-mobile-nav" aria-label="Quick navigation">
+        <a href="http://localhost:8080/admin" class=""><i class="fa-solid fa-gauge-high"></i>Home</a>
+        <a href="http://localhost:8080/admin/content" class=""><i class="fa-regular fa-file-lines"></i>Content</a>
+        <a href="http://localhost:8080/admin/media" class=""><i class="fa-regular fa-images"></i>Media</a>
+        <a href="http://localhost:8080/admin/comments" class=""><i class="fa-regular fa-comments"></i>Comments</a>
+        <a href="#" data-lte-toggle="sidebar"><i class="fa-solid fa-bars"></i>Menu</a>
+    </nav>
+
+    <script src="http://localhost:8080/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="http://localhost:8080/vendor/adminlte/js/adminlte.min.js"></script>
+    <script src="http://localhost:8080/vendor/sweetalert2/sweetalert2.all.min.js"></script>
+    <script src="http://localhost:8080/vendor/chartjs/chart.umd.js"></script>
+    <script src="http://localhost:8080/vendor/sortablejs/Sortable.min.js"></script>
+    <script src="http://localhost:8080/assets/admin/admin.js?v=1793235006"></script>
+    <script src="http://localhost:8080/vendor/fullcalendar/index.global.min.js"></script>
+<script nonce="-kHxifzcjC5UWVUQ3kOMM_Ny">
+(function () {
+    var element = document.getElementById('dstCalendar');
+    if (!element || typeof FullCalendar === 'undefined') { return; }
+
+    var calendar = new FullCalendar.Calendar(element, {
+        initialView: 'dayGridMonth',
+        height: 'auto',
+        firstDay: 1,
+        nowIndicator: true,
+        fixedWeekCount: false,
+        headerToolbar: {
+            left: 'prev,next today',
+            center: 'title',
+            right: 'dayGridMonth,timeGridWeek,listMonth'
+        },
+        buttonText: { today: 'Today', month: 'Month', week: 'Week', list: 'List' },
+        events: {
+            url: "http:\/\/localhost:8080\/admin\/calendar\/events",
+            method: 'GET',
+            failure: function () { Destra.toast('error', 'Could not load calendar events.'); }
+        },
+        eventTimeFormat: { hour: '2-digit', minute: '2-digit', hour12: false },
+        eventDisplay: 'block',
+        eventDidMount: function (info) {
+            var props = info.event.extendedProps;
+            var parts = [props.type];
+            if (props.section) { parts.push(props.section); }
+            parts.push(props.status);
+            info.el.title = info.event.title + ' — ' + parts.join(' · ');
+        }
+    });
+
+    calendar.render();
+
+    document.addEventListener('dst:theme', function () {
+        calendar.render();
+    });
+})();
+</script>
+</body>
+</html>

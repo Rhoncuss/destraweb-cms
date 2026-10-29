@@ -1,0 +1,26 @@
+{
+    "name": "Author Box",
+    "slug": "author-box",
+    "version": "1.0.0",
+    "author": "DESTRA CMS",
+    "description": "Appends a friendly author card to every article, pulled from the author profile. A compact reference plugin showing hooks, settings and view rendering.",
+    "namespace": "Destra\\Plugins\\AuthorBox",
+    "class": "Destra\\Plugins\\AuthorBox\\AuthorBox",
+    "main": "src/AuthorBox.php",
+    "settings": {
+        "heading": {
+            "label": "Card heading",
+            "type": "text",
+            "default": "About the author"
+        },
+        "fallback_bio": {
+            "label": "Fallback bio",
+            "type": "textarea",
+            "help": "Shown when the author has no bio on their profile."
+        },
+        "show_avatar": {
+            "label": "Show avatar",
+            "type": "bool"
+        }
+    }
+}

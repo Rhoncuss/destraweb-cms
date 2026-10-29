@@ -1,0 +1,28 @@
+{
+    "name": "destra-cms",
+    "version": "1.0.0",
+    "private": true,
+    "description": "DESTRA CMS - assets pipeline (vendor libraries are copied into public/vendor).",
+    "scripts": {
+        "build:frontend": "tailwindcss -i resources/css/frontend.css -o public/assets/frontend/css/app.css --minify",
+        "watch:frontend": "tailwindcss -i resources/css/frontend.css -o public/assets/frontend/css/app.css --watch"
+    },
+    "dependencies": {
+        "@ckeditor/ckeditor5-build-classic": "44.3.0",
+        "@fortawesome/fontawesome-free": "7.3.1",
+        "admin-lte": "4.10.0",
+        "bootstrap": "5.3.8",
+        "bootstrap-icons": "1.13.2",
+        "chart.js": "4.6.1",
+        "dropzone": "6.3.5",
+        "fullcalendar": "6.1.19",
+        "sortablejs": "1.15.7",
+        "summernote": "0.9.1",
+        "sweetalert2": "11.26.25",
+        "swiper": "14.3.0",
+        "tinymce": "8.10.1"
+    },
+    "devDependencies": {
+        "tailwindcss": "3.4.19"
+    }
+}

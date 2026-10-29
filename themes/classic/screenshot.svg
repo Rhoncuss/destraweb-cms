@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800" role="img" aria-label="Classic theme preview">
+    <rect width="1200" height="800" fill="#f4efe4"/>
+    <rect x="60" y="42" width="1080" height="70" fill="#fffdf8" stroke="#ddd6ca"/>
+    <text x="96" y="88" font-family="Georgia, serif" font-size="26" fill="#17181c" letter-spacing="1">THE DAILY DESTRA</text>
+    <g fill="#6f6a62" font-family="Georgia, serif" font-size="12">
+        <text x="700" y="84">Stories</text>
+        <text x="770" y="84">Docs</text>
+        <text x="826" y="84">Archive</text>
+        <text x="898" y="84">About</text>
+    </g>
+    <rect x="980" y="62" width="128" height="30" fill="#17181c"/>
+    <text x="1008" y="82" font-family="Georgia, serif" font-size="12" fill="#fffdf8" letter-spacing="2">SUBSCRIBE</text>
+
+    <rect x="60" y="130" width="1080" height="3" fill="#17181c"/>
+    <rect x="60" y="133" width="1080" height="1" fill="#17181c"/>
+
+    <text x="60" y="188" font-family="Georgia, serif" font-size="13" fill="#7a2e2e" letter-spacing="3">EDITOR'S NOTE</text>
+    <text x="60" y="240" font-family="Georgia, serif" font-size="54" fill="#17181c">A slower kind of</text>
+    <text x="60" y="300" font-family="Georgia, serif" font-size="54" fill="#17181c">publishing</text>
+    <rect x="60" y="330" width="560" height="1" fill="#ddd6ca"/>
+    <text x="60" y="364" font-family="Georgia, serif" font-size="17" fill="#33343a">Long reads, careful editing and room to think.</text>
+    <text x="60" y="390" font-family="Georgia, serif" font-size="17" fill="#33343a">Everything the modern newsroom needs.</text>
+    <rect x="60" y="420" width="158" height="40" fill="#17181c"/>
+    <text x="88" y="445" font-family="Georgia, serif" font-size="12" fill="#fffdf8" letter-spacing="2">START READING</text>
+
+    <rect x="680" y="160" width="460" height="300" fill="#e8e0d1"/>
+    <rect x="680" y="160" width="460" height="300" fill="none" stroke="#17181c"/>
+    <g fill="#d5c9b4">
+        <circle cx="920" cy="290" r="58"/>
+        <path d="M680 460 L804 330 L884 410 L976 300 L1140 460 Z" opacity=".7"/>
+    </g>
+    <rect x="700" y="400" width="320" height="18" fill="#17181c"/>
+
+    <rect x="60" y="500" width="1080" height="1" fill="#17181c"/>
+    <g>
+        <rect x="60" y="530" width="330" height="220" fill="#fffdf8" stroke="#ddd6ca"/>
+        <rect x="76" y="546" width="298" height="96" fill="#e8e0d1"/>
+        <text x="76" y="676" font-family="Georgia, serif" font-size="19" fill="#17181c">Notes from the desk</text>
+        <rect x="76" y="692" width="220" height="6" fill="#ddd6ca"/>
+        <rect x="76" y="708" width="180" height="6" fill="#ddd6ca"/>
+    </g>
+    <g>
+        <rect x="435" y="530" width="330" height="220" fill="#fffdf8" stroke="#ddd6ca"/>
+        <rect x="451" y="546" width="298" height="96" fill="#e8e0d1"/>
+        <text x="451" y="676" font-family="Georgia, serif" font-size="19" fill="#17181c">The long form</text>
+        <rect x="451" y="692" width="220" height="6" fill="#ddd6ca"/>
+        <rect x="451" y="708" width="180" height="6" fill="#ddd6ca"/>
+    </g>
+    <g>
+        <rect x="810" y="530" width="330" height="220" fill="#fffdf8" stroke="#ddd6ca"/>
+        <rect x="826" y="546" width="298" height="96" fill="#e8e0d1"/>
+        <text x="826" y="676" font-family="Georgia, serif" font-size="19" fill="#17181c">Field reports</text>
+        <rect x="826" y="692" width="220" height="6" fill="#ddd6ca"/>
+        <rect x="826" y="708" width="180" height="6" fill="#ddd6ca"/>
+    </g>
+    <rect x="0" y="772" width="1200" height="28" fill="#17181c"/>
+</svg>

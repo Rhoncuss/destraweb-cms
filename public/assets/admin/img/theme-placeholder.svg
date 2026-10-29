@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="400" viewBox="0 0 640 400" role="img" aria-label="Theme preview placeholder">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#4f46e5"/>
+      <stop offset=".55" stop-color="#7c6cf8"/>
+      <stop offset="1" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+  <rect width="640" height="400" fill="#eef1fa"/>
+  <rect x="48" y="44" width="544" height="312" rx="18" fill="#ffffff"/>
+  <rect x="48" y="44" width="544" height="34" rx="18" fill="#f5f6fb"/>
+  <circle cx="70" cy="61" r="5" fill="#f59e0b"/>
+  <circle cx="88" cy="61" r="5" fill="#10b981"/>
+  <circle cx="106" cy="61" r="5" fill="#6366f1"/>
+  <rect x="76" y="104" width="210" height="16" rx="8" fill="url(#g)"/>
+  <rect x="76" y="134" width="300" height="10" rx="5" fill="#d7dbeb"/>
+  <rect x="76" y="152" width="260" height="10" rx="5" fill="#e3e7f3"/>
+  <rect x="76" y="188" width="150" height="28" rx="14" fill="url(#g)"/>
+  <rect x="76" y="240" width="146" height="92" rx="12" fill="#f1f3fa"/>
+  <rect x="238" y="240" width="146" height="92" rx="12" fill="#f1f3fa"/>
+  <rect x="400" y="240" width="146" height="92" rx="12" fill="#f1f3fa"/>
+  <rect x="92" y="256" width="60" height="8" rx="4" fill="#c9cfe4"/>
+  <rect x="254" y="256" width="60" height="8" rx="4" fill="#c9cfe4"/>
+  <rect x="416" y="256" width="60" height="8" rx="4" fill="#c9cfe4"/>
+  <rect x="92" y="276" width="108" height="6" rx="3" fill="#e0e4f0"/>
+  <rect x="254" y="276" width="108" height="6" rx="3" fill="#e0e4f0"/>
+  <rect x="416" y="276" width="108" height="6" rx="3" fill="#e0e4f0"/>
+  <text x="320" y="380" font-family="Segoe UI, Arial, sans-serif" font-size="13" fill="#8a91a8" text-anchor="middle">DESTRA theme preview</text>
+</svg>

@@ -1,0 +1,18 @@
+{
+    "name": "Modern",
+    "version": "1.0.0",
+    "description": "The signature DESTRA look: airy editorial layout, soft glass surfaces, gradient accents and an app-style mobile bar.",
+    "author": "DESTRA",
+    "screenshot": "screenshot.svg",
+    "license": "Commercial",
+    "supports": {
+        "dark_mode": false,
+        "rtl": true,
+        "layout": "fallback"
+    },
+    "colors": {
+        "primary": "#4f46e5",
+        "secondary": "#0ea5e9",
+        "accent": "#f59e0b"
+    }
+}
