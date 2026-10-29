@@ -241,7 +241,7 @@ activate. Settings can be edited from the plugin card.
 Extract the folder into `plugins/`. The slug is the folder name. Then activate
 it in the admin.
 
-### Distributing on CodeCanyon
+### Distributing on DESTRAWEB
 
 ```
 my-plugin.zip

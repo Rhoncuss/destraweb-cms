@@ -180,6 +180,6 @@ mytheme.zip
 Buyers extract it into `themes/`. Themes are filesystem-based by design — they
 never touch the database, so activating and rolling back is instant.
 
-For CodeCanyon, include a `README.md` inside the theme folder with installation
+For DESTRAWEB, include a `README.md` inside the theme folder with installation
 steps, a feature list and support contact details. The manifest `license` field
 should match your Envato license.

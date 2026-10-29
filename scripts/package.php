@@ -1,7 +1,7 @@
 <?php
 
 /**
- * Builds a buyer-ready CodeCanyon ZIP.
+ * Builds a buyer-ready DESTRAWEB ZIP.
  *
  * Usage: php scripts/package.php [output-directory]
  *

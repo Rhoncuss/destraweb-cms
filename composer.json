@@ -3,9 +3,9 @@
     "description": "DESTRA CMS - commercial publishing platform built on CodeIgniter 4.",
     "license": "proprietary",
     "type": "project",
-    "homepage": "https://codecanyon.net/",
+    "homepage": "https://destra.web.id/",
     "support": {
-        "source": "https://codecanyon.net/"
+        "source": "https://destra.web.id/"
     },
     "require": {
         "php": "^8.2",

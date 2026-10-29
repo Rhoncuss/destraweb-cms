@@ -1,39 +1,28 @@
-DESTRA CMS — Commercial License
-Copyright © 2026 DESTRA. All rights reserved.
+DESTRA CMS — Free and Open Source License
+Copyright © 2026 DESTRAWEB. All rights reserved.
 
-This software is sold exclusively through CodeCanyon (Envato Market). Your
-rights to use, modify and distribute this software are defined by the Envato
-Market license you purchased with the item:
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-  • Regular License — use in a single End Product which end users are not
-    charged for, directly or indirectly.
-  • Extended License — use in a single End Product which end users may be
-    charged for.
-
-The full, binding terms are the Envato Market Terms and the license text shown
-on the item's CodeCanyon page at the time of purchase. Where this summary and
-the Envato license differ, the Envato license prevails.
-
-You may NOT:
-  • redistribute, resell, sublicense, rent, lease or share the source code as a
-    standalone product or as part of a competing CMS, template bundle or
-    "developer" package;
-  • publish the source code in a public repository or otherwise make it
-    available to persons who have not purchased a license;
-  • remove or alter copyright notices in the original source files.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
 You MAY:
-  • use the software for one End Product per license, as defined by Envato;
-  • modify the source code for that End Product;
-  • use the software for a client project, provided the client holds the
-    appropriate license.
+• use, copy, and modify the software for any purpose, personal or commercial;
+• distribute, sublicense, or resell copies of the software;
+• integrate the software into other projects, templates, or developer packages;
+• publish or share the source code publicly.
 
 THIRD-PARTY COMPONENTS
 This package includes open-source libraries (CodeIgniter 4, Bootstrap,
 AdminLTE, Tailwind CSS, Font Awesome, TinyMCE, CKEditor 5, Summernote,
 Dropzone, FullCalendar, Chart.js, Swiper, SweetAlert2, SortableJS,
 HTMLPurifier and others). Each component remains under its own license, as
-stated in its distribution files under `vendor/` and `public/vendor/`.
+stated in its distribution files under vendor/ and public/vendor/.
 Nothing in this license restricts rights granted by those licenses.
 
 NO WARRANTY
@@ -46,6 +35,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 SUPPORT
-Support is provided through the item's CodeCanyon support tab for the support
-period included with your purchase. Custom development, hosting, migrations
-and third-party integrations are outside the scope of item support.
+Support from DESTRAWEB is provided on a community basis. Custom development,
+dedicated hosting, migrations, and specialized third-party integrations
+are outside the scope of standard community support.

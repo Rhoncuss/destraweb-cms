@@ -212,7 +212,7 @@ Checklist before going live:
 - [ ] Restrict database user privileges to the CMS database only.
 - [ ] Configure SMTP and verify SPF/DKIM so password-reset mail is not spoofed or lost.
 - [ ] Schedule encrypted off-site backups of files **and** the database.
-- [ ] Keep PHP, MySQL/MariaDB and the OS patched; subscribe to CodeCanyon item updates.
+- [ ] Keep PHP, MySQL/MariaDB and the OS patched; subscribe to DESTRAWEB item updates.
 - [ ] Review **System → Audit log** after launch and periodically thereafter.
 - [ ] Test restoring a backup before you need it.
 
@@ -221,7 +221,7 @@ Checklist before going live:
 ## 11. Reporting a vulnerability
 
 If you find a security issue in DESTRA CMS, please report it privately through
-the item's CodeCanyon support tab, including reproduction steps and the affected
+the item's DESTRAWEB support tab, including reproduction steps and the affected
 version. Do not open a public review with exploit details.
 
 Please allow a reasonable window for a fix before disclosure. Confirmed issues

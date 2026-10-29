@@ -32,7 +32,7 @@ Restart Apache after editing `php.ini`.
 
 ## 2. Copy the package
 
-Extract the CodeCanyon archive and copy the project folder into the web root:
+Extract the DESTRAWEB archive and copy the project folder into the web root:
 
 ```
 C:\xampp\htdocs\destra
