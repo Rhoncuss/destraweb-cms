@@ -152,7 +152,7 @@ Production servers do not need Node.js.
 
 ## License
 
-DESTRA CMS is commercial software distributed through CodeCanyon. See [LICENSE](LICENSE) for the full terms. The CodeIgniter 4 framework and the bundled open-source libraries remain under their respective licenses (MIT and others); attribution files are kept in `vendor/` and `public/vendor/`.
+DESTRA CMS is free software that can be used for both commercial and non-commercial purposes. Please refer to the LICENSE for full terms and conditions. The CodeIgniter 4 framework, along with the included open-source libraries, remains subject to their respective licenses (MIT and others); attribution files can be found within the `vendor/` and `public/vendor/` directories.
 
 ---
 
