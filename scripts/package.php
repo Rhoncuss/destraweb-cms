@@ -1,13 +1,13 @@
 <?php
 
 /**
- * Builds a buyer-ready DESTRAWEB ZIP.
+ * Builds.
  *
  * Usage: php scripts/package.php [output-directory]
  *
  * The archive excludes development dependencies (.env, node_modules, demo
  * screenshots, runtime caches) and keeps the writable/ skeleton the installer
- * expects. Vendor libraries are bundled so the buyer does not need Composer.
+ * expects.
  */
 
 declare(strict_types=1);

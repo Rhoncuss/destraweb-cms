@@ -2,7 +2,7 @@
 
 **A complete, self-hosted publishing platform built on CodeIgniter 4 — posts, pages, documentation, media, multilingual content, plugins and themes in one elegant admin.**
 
-DESTRA CMS is a commercial-grade alternative to a general-purpose blog engine. It ships with an editorial admin (AdminLTE 4 + Bootstrap 5), a hand-crafted frontend theme system (Tailwind CSS), a guided installer, a token-authenticated REST API and a WordPress-style extension layer. No build tools are required on the buyer's server.
+DESTRA CMS is a commercial-grade alternative to a general-purpose blog engine. It ships with an editorial admin (AdminLTE 4 + Bootstrap 5), a hand-crafted frontend theme system (Tailwind CSS), a guided installer, a token-authenticated REST API and a WordPress-style extension layer. No build tools are required.
 
 - **Version:** 1.0.0 “Aurora”
 - **Framework:** CodeIgniter 4.7.x (PHP 8.2+)

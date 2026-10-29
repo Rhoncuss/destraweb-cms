@@ -177,7 +177,7 @@ mytheme.zip
     └── Views/…
 ```
 
-Buyers extract it into `themes/`. Themes are filesystem-based by design — they
+extract it into `themes/`. Themes are filesystem-based by design — they
 never touch the database, so activating and rolling back is instant.
 
 For DESTRAWEB, include a `README.md` inside the theme folder with installation
